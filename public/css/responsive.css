@@ -1,0 +1,254 @@
+
+/* 1920 laptop monitor*/
+@media (min-width: 1400px) and (max-width: 2000px) {
+        /* Sidebar */
+       #sidebar {
+        min-width: 360px;
+        max-width: 350px;
+        }
+        #sidebar ul li a {
+        padding: 24px;
+        font-size: 1.8em;
+        font-family:Oswald;
+        letter-spacing: 2px;  
+    }
+     #sidebar .sidebar-header {
+        padding: 25px;
+        letter-spacing: 2px;
+    }
+
+       #sidebar .sidebar-header h3 {
+        
+        font-family:Oswald;
+       font-size: 2.8em
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        padding-top: 1rem;
+        padding-bottom:  1rem;
+    }
+
+    /* Album */
+    .albumist-margin {
+        margin-left: 210px;
+    
+    }
+    .artistlist-margin {
+    margin-left: 210px;
+    
+    }
+
+}
+
+
+
+/* 1366laptop monitor*/
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+
+   /*register*/
+    .wrap-login100 {
+      width: 540px;
+      height: 88%;
+    }
+
+    /* home */
+        /* upeerpart */
+    .logo-size{
+      
+      width: 400px;
+      height: 208px;
+    }
+    .home-content-feel {
+    
+    font-size: 45px;
+    
+    }
+    .btn-general {
+    
+    font-size: 15px;
+    
+    padding: 10px 39px 10px 39px;
+    
+    }
+       
+}
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    /*register*/
+    .wrap-login100 {
+      width: 540px;
+      height: 88%;
+    }
+
+    /* home */
+        /* upeerpart */
+    .container{
+        margin-left: 100px;
+    }
+
+    .logo-size{
+      
+      width: 400px;
+      height: 208px;
+    }
+    .home-content-feel {
+        font-size: 45px;
+    }
+    .btn-general {
+        font-size: 15px;
+        padding: 10px 39px 10px 39px;
+    }
+     
+    .align-toMusic-logo{
+        margin-bottom: -65px;
+    }
+    .align-toMusic-button{
+        margin-top: -61px;
+    }
+
+ 
+
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+
+
+     /*home*/
+         /* upeerpart */
+    .container{
+        margin-left: 50px;
+    }
+
+    .logo-size{
+      
+      width: 400px;
+      height: 208px;
+    }
+    .home-content-feel {
+        font-size: 45px;
+    }
+    .btn-general {
+        font-size: 15px;
+        padding: 10px 39px 10px 39px;
+    }
+     
+    /* .align-toMusic-logo{
+        margin-bottom: -65px;
+    }
+    .align-toMusic-button{
+        margin-top: -61px;
+    } */
+        .align-toMusic-logo{
+        margin-bottom: -10px;
+    }
+    .align-toMusic-button{
+        margin-top: s10px;
+    }
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*home*/
+            /* upeerpart */
+    .container{
+        margin-left: 50px;
+    }
+
+    .logo-size{
+      
+      width: 400px;
+      height: 208px;
+    }
+    .home-content-feel {
+        font-size: 45px;
+    }
+    .btn-general {
+        font-size: 15px;
+        padding: 10px 39px 10px 39px;
+    }
+        .align-toMusic-logo{
+        margin-bottom: -10px;
+    }
+    .align-toMusic-button{
+        margin-top: 10px;
+    }
+    /* Contact */
+    ul.office-details li {
+        margin-right: 15px;
+    }
+    ul.office-details li i {
+        width: 25px;
+    }
+}
+
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+/* midea player button willbe half from here */
+@media (max-width: 767px) {
+    /*home*/
+        .align-toMusic-logo{
+        margin-bottom: 0px;
+
+    }
+    .align-toMusic-button{
+        margin-top: 0px;
+
+    }
+    /* Contact */
+    #contact-left {
+        text-align: center;
+    }
+    .office {
+        margin-bottom: 40px;
+    }
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+    ul.social-list {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 480px) {
+        /*home*/
+        .align-toMusic-logo{
+        margin-bottom: 0px;
+
+    }
+    .align-toMusic-button{
+        margin-top: 15px;
+
+}
+/* Extra Small Devices (Portrait Phones & Smaller Devices) */
+
+@media (max-width: 320px) {
+        /*home*/
+        .align-toMusic-logo{
+        margin-bottom: 0px;
+
+    }
+    .align-toMusic-button{
+        margin-top: 10px;
+
+}
