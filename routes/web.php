@@ -15,9 +15,18 @@
 //     return view('master');
 // });
 
-Route::get('/','PagesController@index');
-
-Route::get('/home','PagesController@home');
+Route::get('/', function () {
+    if(Auth::guest())
+		{
+    		return view('master');
+		}
+     else{
+     		 return view('home');
+     	}
+});
+Route::get('/home', function () {
+    return view('home');
+});
 
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

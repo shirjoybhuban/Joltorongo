@@ -1,8 +1,8 @@
 
 <div class="playlistsContainer container-fluid">
 
-	<div class="gridViewContainer row">
-	  <div class="container-fluid">
+	<div class="gridViewContainers row ">
+	  <div class="container">
 	  	<div class="row " >
 			<h1>My Playlist</h1>
 		</div>
@@ -14,49 +14,28 @@
 	  	
 	  </div>
 
-		
-
-
-
-		
-<!-- 
-			<div class='gridViewItem' role='link' tabindex='0' 
-							onclick=''>
-
-						<div class='playlistImage'>
-							<img src="{{ asset('image/album/a1.jpg') }}">
-						</div>
-						
-						<div class='gridViewInfo'>
-							playlist name
-						</div>
-
-					</div> -->
 	</div>
-	<div class="row">
+	<div class="row new-relesed-1080">
 
                                 <div class=" col-md-3" >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
-                                            <img src="{{ asset('image/album/a6.jpg') }}" class="img-responsive" alt="portfolio 01">
+                                            <img src="{{ asset('image/playlist/playlist 2.jpg') }}" class="img-responsive" alt="portfolio 01">
 
-                                            <!-- <div class="portfolio-item-overlay">
+                                           <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
                                                     
-                                                    <h3>Logo</h3>
+                                                    <h3>Playlist name</h3>
 
                                                   
-                                                    <span></span>
-
                                                    
-                                                    <p>Desktop, Design</p>
 
                                                 </div>
 
-                                            </div> -->
+                                            </div>
                                         </a>
 
                                     </div>
@@ -65,26 +44,23 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
-                                            <img src="{{ asset('image/album/a5.jpg') }}" class="img-responsive" alt="portfolio 01">
+                                            <img src="{{ asset('image/playlist/playlist 2.jpg') }}" class="img-responsive" alt="portfolio 01">
 
-                                            <!-- <div class="portfolio-item-overlay">
+                                           <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
                                                     
-                                                    <h3>Logo</h3>
+                                                    <h3>Playlist name</h3>
 
                                                   
-                                                    <span></span>
-
                                                    
-                                                    <p>Desktop, Design</p>
 
                                                 </div>
 
-                                            </div> -->
+                                            </div>
                                         </a>
 
                                     </div>
@@ -93,26 +69,23 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
-                                            <img src="{{ asset('image/album/a4.jpg') }}" class="img-responsive" alt="portfolio 01">
+                                            <img src="{{ asset('image/playlist/playlist 2.jpg') }}" class="img-responsive" alt="portfolio 01">
 
-                                            <!-- <div class="portfolio-item-overlay">
+                                           <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
                                                     
-                                                    <h3>Logo</h3>
+                                                    <h3>Playlist name</h3>
 
                                                   
-                                                    <span></span>
-
                                                    
-                                                    <p>Desktop, Design</p>
 
                                                 </div>
 
-                                            </div> -->
+                                            </div>
                                         </a>
 
                                     </div>
@@ -121,26 +94,23 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
-                                            <img src="{{ asset('image/album/a3.jpg') }}" class="img-responsive" alt="portfolio 01">
+                                            <img src="{{ asset('image/playlist/playlist 2.jpg') }}" class="img-responsive" alt="portfolio 01">
 
-                                            <!-- <div class="portfolio-item-overlay">
+                                           <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
                                                     
-                                                    <h3>Logo</h3>
+                                                    <h3>Playlist name</h3>
 
                                                   
-                                                    <span></span>
-
                                                    
-                                                    <p>Desktop, Design</p>
 
                                                 </div>
 
-                                            </div> -->
+                                            </div>
                                         </a>
 
                                     </div>
@@ -149,60 +119,31 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
-                                            <img src="{{ asset('image/album/a2.jpg') }}" class="img-responsive" alt="portfolio 01">
+                                            <img src="{{ asset('image/playlist/playlist 2.jpg') }}" class="img-responsive" alt="portfolio 01">
 
-                                            <!-- <div class="portfolio-item-overlay">
+                                            <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
                                                     
-                                                    <h3>Logo</h3>
+                                                    <h3>Playlist name</h3>
 
                                                   
-                                                    <span></span>
-
                                                    
-                                                    <p>Desktop, Design</p>
 
                                                 </div>
 
-                                            </div> -->
+                                            </div>
                                         </a>
 
                                     </div>
 
 
                                 </div>
-                                 <div class=" col-md-3  " >
-
-                                    <div class="portfolio-item">
-
-                                        <a href="" title="Add Description">
-                                            <img src="{{ asset('image/album/a2.jpg') }}" class="img-responsive" alt="portfolio 01">
-
-                                            <!-- <div class="portfolio-item-overlay">
-                                                <div class="portfolio-item-details text-center">
-
-                                                    
-                                                    <h3>Logo</h3>
-
-                                                  
-                                                    <span></span>
-
-                                                   
-                                                    <p>Desktop, Design</p>
-
-                                                </div>
-
-                                            </div> -->
-                                        </a>
-
-                                    </div>
-
-
-                                </div>
+                                
+                            </div>
 
                             </div>
 

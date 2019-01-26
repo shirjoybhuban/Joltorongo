@@ -11,7 +11,8 @@
 
 .login-btn-font{
  font-family:Jockey One;
- font-size: 24px;
+ font-size: 22px;
+ margin-bottom: 5px;
 }
 
 
@@ -70,7 +71,7 @@
 .cn-button {
   border: none;
   background: none;
-  color: rgb(240, 96, 96,0.6);
+  color: #f44e4e;
   text-align: center;
   font-size: 1.6em;
   padding-bottom: 1em;
@@ -89,7 +90,7 @@
 .cn-button:hover,
 .cn-button:active,
 .cn-button:focus {
-  color: #aa1010;
+  color: #f66f6f;
 }
 
 .csstransforms .cn-wrapper li {
@@ -119,10 +120,10 @@
   position: absolute;
   bottom: -7.25em;
   right: -7.25em;
-  border-radius: 50%;
+  border-radius: 40%;
   text-decoration: none;
   color: #fff;
-  padding-top: 1.8em;
+  padding-top: 1em;
   text-align: center;
   -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
   -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
@@ -135,8 +136,8 @@
 }
 
 .csstransforms .cn-wrapper li a span {
-  font-size: 1.1em;
-  opacity: 0.7;
+  font-size: 1.3em;
+  /* opacity: 0.7; */
 }
 
 /* for a central angle x, the list items must be skewed by 90-x degrees

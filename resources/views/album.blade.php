@@ -34,11 +34,11 @@
 
                         <div id="isotope-container">
                             
-                            <div class="row desktop d-none">
+                            <div class="row desktop d-none new-relesed-1080">
 
                                 <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/album/a6.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -66,7 +66,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/album/a5.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -94,7 +94,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/album/a4.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -122,7 +122,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/album/a3.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -150,7 +150,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/album/a2.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -178,7 +178,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/album/a2.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -218,7 +218,7 @@
                                 // try to put item in every colum
                                      
                                      for( $i = 0; $i<10; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Album name </a>';
+                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Album name sdasd dd </a>';
                                      }
                         
                                   ?>

@@ -30,14 +30,14 @@
         <button class="jp-shuffle" role="button" tabindex="0">shuffle</button>
       </div>
      
-      <div class="jp-artist">
-       <button class="jp-artistPic" role="button" tabindex="0">play</button>
-       
-       <div class="right">
-         <span class="song-name">JSACB Song Name</span>
-         <span class="text-center">Bhban malik</span>
-       </div>
-    </div>
+        <div class="jp-artist">
+         <button class="jp-artistPic" role="button" tabindex="0">play</button>
+         
+         <div class="right">
+           <span class="song-name">Ek Chera Ghuri</span>
+           <span class="text-center">By Bhuban</span>
+         </div>
+      </div>
     </div>
     <div class="jp-playlist">
       <ul>

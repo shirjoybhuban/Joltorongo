@@ -95,7 +95,7 @@
   width: 100%; }
 
 .jp-audio .jp-interface {
-  height: 86px; }
+  height: 75px; }
 
 .jp-audio-stream .jp-interface {
   height: 80px; }
@@ -119,7 +119,7 @@
   overflow: hidden; }
 
 .jp-audio .jp-controls {
-  width: 380px;
+  width: 246px;
   padding: 1px 20px 0 26px; }
 
 .jp-audio-stream .jp-controls {
@@ -191,7 +191,7 @@
 /* @group progress bar */
 .jp-progress {
   overflow: hidden;
-  background-color: #ddd; }
+  background-color: #212226; }
 
 .jp-audio .jp-progress {
   position: absolute;

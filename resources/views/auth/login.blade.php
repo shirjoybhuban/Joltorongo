@@ -12,16 +12,18 @@
     <!-- navbar end -->
 
 
-<div class="container-fluid login_back" id="log_reg_back">
+<div class="container-fluid login_back " id="log_reg_back">
   <div class="wrap-login100 form_center" id="form_ani">
     <div class="login100-form-title" >
       <span class="login100-form-title-1" id="label_ani">
         Log In
       </span>
     </div>
-    <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
+    <div class="row">
+      <div class="col-md-12">
+           <form class="login100-form validate-form" method="POST" action="{{ route('login') }}">
       @csrf
-      <div class="wrap-input100 validate-input m-b-26" data-validate="Email is required">
+      <div class="wrap-input100 validate-input form-group" data-validate="Email is required">
         <span class="label-input100">Email</span>
         <input placeholder="Enter Email" id="email" type="email" class="input100 form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}">
         <span class="focus-input100"></span>
@@ -31,7 +33,7 @@
         </span>
         @endif
       </div>
-      <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+      <div class="wrap-input100 validate-input form-group" data-validate = "Password is required">
         <span class="label-input100">Password</span>
         <input placeholder="Enter password" id="password" type="password" class=" input100 form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
         <span class="focus-input100"></span>
@@ -60,6 +62,10 @@
         </button>
       </div>
     </form>
+      </div>
+     
+    </div>
+    
     
   </div>
 </div>

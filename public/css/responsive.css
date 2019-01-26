@@ -1,10 +1,10 @@
 
 /* 1920 laptop monitor*/
-@media (min-width: 1400px) and (max-width: 2000px) {
+@media (min-width: 1400px) and (max-width: 2300px) {
         /* Sidebar */
-       #sidebar {
-        min-width: 360px;
-        max-width: 350px;
+      /* #sidebar {
+        min-width: 310px;
+        max-width: 310px;
         }
         #sidebar ul li a {
         padding: 24px;
@@ -20,8 +20,8 @@
        #sidebar .sidebar-header h3 {
         
         font-family:Oswald;
-       font-size: 2.8em
-    }
+       font-size: 2.5em
+    }*/
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 2rem;
         padding-left: 2rem;
@@ -31,14 +31,30 @@
     }
 
     /* Album */
-    .albumist-margin {
-        margin-left: 210px;
+   .albumist-margin {
+    margin-left: 152px;
     
     }
     .artistlist-margin {
-    margin-left: 210px;
-    
+        margin-left: 152px;
+        
     }
+    .list_colum{
+  padding: 0px 120px;
+ 
+    }
+    .portfolio-item img {
+    width: 75%;
+    padding: -50px;
+    }
+    .portfolio-item {
+    margin-bottom: 90px;
+    }
+    .list_colum_item{
+    padding: 12px;
+    font-size: 19px;
+    } 
+
 
 }
 
@@ -48,9 +64,9 @@
 
 @media (min-width: 1300px) and (max-width: 1400px) {
 
-   /*register*/
+   /*register login*/
     .wrap-login100 {
-      width: 540px;
+      width: 619px;
       height: 88%;
     }
 
@@ -73,6 +89,10 @@
     padding: 10px 39px 10px 39px;
     
     }
+    /*Iframe*/
+    iframe {
+        width: 1024px;
+    }
        
 }
 
@@ -82,7 +102,7 @@
 @media (min-width: 1200px) and (max-width: 1299px) {
     /*register*/
     .wrap-login100 {
-      width: 540px;
+      width: 619px;
       height: 88%;
     }
 
@@ -111,7 +131,10 @@
     .align-toMusic-button{
         margin-top: -61px;
     }
-
+      /*Iframe*/
+    iframe {
+        width: 900px;
+    }
  
 
 }
@@ -152,8 +175,13 @@
         margin-bottom: -10px;
     }
     .align-toMusic-button{
-        margin-top: s10px;
+        margin-top: 10px;
     }
+    /*Iframe*/
+     iframe {
+        width: 700px;
+    }
+  
 }
 
 
@@ -191,12 +219,25 @@
     ul.office-details li i {
         width: 25px;
     }
+    /* Album */
+ 
+    .list_colum {
+        padding: 0px 7px;
+    }
+    /*Music player*/
+    .jp-interface .jp-artist{
+        display: none;
+    }
+     /*Iframe*/
+     iframe {
+        width: 583px;
+    }
 }
 
 
 /* Extra Small Devices (Landscape Phones & Portrait Tablets) */
 /* midea player button willbe half from here */
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     /*home*/
         .align-toMusic-logo{
         margin-bottom: 0px;
@@ -225,6 +266,26 @@
     ul.social-list {
         margin-bottom: 40px;
     }
+     /* Album */
+ 
+    .list_colum {
+        padding: 0px 7px;
+    }
+    /* Navbar */
+ 
+    .site-nav-wrapper {
+    
+    margin-left: 260px;
+    }
+    /*Music player*/
+    .jp-interface .jp-artist{
+        display: none;
+    }
+    /*Iframe*/
+     iframe {
+        width: 300px;
+    }
+
 }
 
 
@@ -237,7 +298,108 @@
 
     }
     .align-toMusic-button{
-        margin-top: 15px;
+        margin-top: 15px;}
+    
+    /* Singli album songlist */
+
+    .entityInfo .rightSection {
+    width: 60%;
+    float: left;
+    padding: 0px 10px 0px 20px;
+    box-sizing: border-box;
+}
+    .entityInfo .rightSection p {
+    margin-top: -8px;
+}
+    .tracklistRow .trackInfo .trackName {
+    margin-left: 20px;
+}
+.tracklistRow .trackInfo span { 
+    margin-left: 20px;
+}
+.tracklistRow .trackOptions img {
+    width: 21px;
+   }
+
+ /* Album */
+ #isotope-filters {
+    margin-bottom: 5px;
+    padding: 19px 0px 0px 0px;
+    margin-left: 25px;
+}  
+.list_colum {
+    padding: 0px 7px;
+}
+/* Navbar */
+ 
+.site-nav-wrapper {
+
+    margin-left: 0px;
+    margin-right:  140px;
+}
+/* Music player*/
+
+
+.jp-audio .jp-controls {
+  width: 136px; }
+  .jp-volume-controls {
+    left: 140px;
+  }
+.jp-audio .jp-type-playlist .jp-toggles {
+    left: 173px;
+  }
+.jp-interface .jp-artist {
+    margin: -79px;
+    margin-right: 16px;
+    width: 285px;
+    float: right;
+}
+
+.jp-artistPic {
+    width: 0px;
+    height: 0px;
+}
+.jp-audio .jp-interface {
+    height: 174px;
+}
+.jp-audio .jp-type-playlist .jp-progress {
+   left: 94px;
+    width: 214px;
+}
+.jp-audio .jp-progress {
+    top: 82px;
+    height: 8px;
+}
+.jp-time-holder {
+    display: none;
+}
+.jp-stop{
+    display: none;
+}
+/*Iframe*/
+     iframe {
+        width: 230px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
@@ -252,3 +414,25 @@
         margin-top: 10px;
 
 }
+/* Singli album songlist */
+
+.tracklistRow .trackOptions img {
+    width: 16px;
+   }
+ /* Album */
+ #isotope-filters {
+    margin-bottom: 5px;
+    padding: 9px 0px 0px 0;
+    margin-left: 25px;
+} 
+.list_colum {
+    padding: 0px 7px;
+}
+/* Navbar */
+ 
+    .site-nav-wrapper {
+    
+    margin-left: 60px;
+    }
+
+}    

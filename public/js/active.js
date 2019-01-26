@@ -7,10 +7,12 @@ $(window).on('load', function () { // makes sure that whole site is loaded
 });
 
 /* =========================================
-                Home
+                Bootsrap tooltip
 ============================================ */
-// home conten button
-
+// Home nav
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 
 // end
@@ -231,3 +233,4 @@ $(window).on('load', function () {
     });
 });
     
+

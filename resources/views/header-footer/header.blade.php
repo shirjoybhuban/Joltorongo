@@ -1,14 +1,14 @@
 
 <!-- navbar 1 start -->
 <header>
-  <nav class="navbar navbar-expand-lg fixed-top container">
+  <nav class="navbar navbar-expand-md fixed-top container">
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="fas fa-align-justify" style='font-size:25px;color:#f66f6f'></span>
     </button>
-    <div class="site-nav-wrapper">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ">
+    <div class="site-nav-wrapper ">
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav text-center">
           @guest <!-- if user not log in -->
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -62,15 +62,16 @@
 
 <div class="component">
   <!-- Start Nav Structure -->
-  <button class="cn-button" id="cn-button" ><span class="login-btn-font">Login</span></button>
+  <button class="cn-button login-btn-font" id="cn-button" ><span class="">Login</span></button>
   <div class="cn-wrapper" id="cn-wrapper">
     <ul>
       <li><a href="#"><span style="" class="fab fa-facebook-messenger"></span></a></li>
-      <li><a href="{{ route('login') }}"><span class="fab fa-facebook-square"></span></a></li>
-      <li><a href="{{ route('register') }}"><span class="fab fa-google-plus-square"></span></a></li>
+      <li class="login-btn-font"><a href="{{ route('login') }}">Login</a></li>
+      <li class="login-btn-font"><a href="{{ route('register') }}">SignUp</span></a></li>
 
       <li ><a href="#"><span class="fab fa-github-square"></span></a></li>
-      <li><a href="#"><span class="fas fa-stroopwafel"></span></a></li>
+      
+      <li><a href="#"><span class="fab fa-github-square"></span></a></li>
     </ul>
   </div>
   <div id="cn-overlay" class="cn-overlay"></div>

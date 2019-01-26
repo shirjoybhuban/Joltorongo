@@ -81,6 +81,10 @@ ul, li {
 	list-style-type: none;
 }*/
 
+/* Overwrite */
+
+
+
 
 /*---------------------------------------------*/
 input {
@@ -183,10 +187,10 @@ iframe {
 
 
 .wrap-login100 {
-  width: 670px;
+  width: 619px;
   /* height: 80%; */
-  background: #fff;
-  border-radius: 10px;
+  /* background: #fff;
+  border-radius: 10px; */
   overflow: hidden;
   position: relative;
 }
@@ -194,7 +198,7 @@ iframe {
 /*==================================================================
 [ Title form ]*/
 .login100-form-title {
-  background-image: url("/image/login-register/login.jpg");
+  background-image: url("/image/login-register/login.png");
   width: 100%;
   position: relative;
   z-index: 1;
@@ -391,6 +395,7 @@ input.input100 {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 50px;
 }
 
 .login100-form-btn {
@@ -426,7 +431,7 @@ input.input100 {
 /*------------------------------------------------------------------
 [ Responsive ]*/
 
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
   .login100-form {
     padding: 43px 15px 57px 117px;
   }
@@ -445,7 +450,7 @@ input.input100 {
     width: 100%;
     padding: 0 5px;
   }
-}
+}*/
 
 
 /*------------------------------------------------------------------
@@ -508,11 +513,11 @@ input.input100 {
   opacity: 1;
 }
 
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
   .alert-validate::before {
     visibility: visible;
     opacity: 1;
   }
-}
+}*/
 
 

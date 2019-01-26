@@ -13,7 +13,7 @@
 
 
 <div class="container-fluid login_back" id="log_reg_back">
-  <div class="wrap-login100 form_center" id="form_ani">
+  <div class="wrap-login100 form_center row " id="form_ani">
     <div class="login100-form-title">
       <span class="login100-form-title-1" id="label_ani">
         Sign Up
@@ -21,9 +21,9 @@
     </div>
     <form class="login100-form validate-form" method="POST" action="{{ route('register') }}">
       @csrf
-      <div class="wrap-input100 m-b-26">
+      <div class="wrap-input100 m-b-26 form-group">
         <span class="label-input100">Name</span>
-        <input placeholder="Enter Name" id="name" type="text" class="input100 form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+        <input placeholder="Enter Name" id="name" type="text" class="input100 form-control{{ $errors->has('name') ? ' is-invalid' : '' }} " name="name" value="{{ old('name') }}" required autofocus>
         <span class="focus-input100"></span>
         @if ($errors->has('name'))
         <span class="invalid-feedback" role="alert">
@@ -31,7 +31,7 @@
         </span>
         @endif
       </div>
-      <div class="wrap-input100 validate-input m-b-26" data-validate="Email is required">
+      <div class="wrap-input100 validate-input m-b-26 form-group" data-validate="Email is required">
         <span class="label-input100">Email</span>
         <input placeholder="Enter Email" id="email" type="email" class="input100 form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
         <span class="focus-input100"></span>
@@ -41,7 +41,7 @@
         </span>
         @endif
       </div>
-      <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+      <div class="wrap-input100 validate-input m-b-18 form-group" data-validate = "Password is required">
         <span class="label-input100">Password</span>
         <input placeholder="Enter password" id="password" type="password" class=" input100 form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
         <span class="focus-input100"></span>
@@ -51,7 +51,7 @@
         </span>
         @endif
       </div>
-      <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+      <div class="wrap-input100 validate-input m-b-18 form-group" data-validate = "Password is required">
         <span class="label-input100">Re-type password</span>
         <input placeholder="password Confirmation" id="password-confirm" type="password" class="form-control input100" name="password_confirmation" required>
         <span class="focus-input100"></span>

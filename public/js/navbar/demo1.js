@@ -32,7 +32,7 @@
 	}
 	function closeNav(){
 		open = false;
-		button.innerHTML = "+";
+		button.innerHTML = "Login";
 		classie.remove(overlay, 'on-overlay');
 		classie.remove(wrapper, 'opened-nav');
 	}

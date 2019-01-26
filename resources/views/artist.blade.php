@@ -13,9 +13,9 @@
                         <div id="isotope-filters" class="text-center">
 
                             
-                            <button class="btn" data-filter=".desktop"><span>New Rleased</span></button>
+                            <button class="btn" data-filter=".desktop"><span>New Artist</span></button>
                             <!-- <button class="btn" data-filter=".mobile"><span>Mobile</span></button> -->
-                            <button class="btn" data-filter=".web"><span>All Album</span></button>
+                            <button class="btn" data-filter=".web"><span>Artist list</span></button>
 
                         </div>
 
@@ -34,11 +34,11 @@
 
                         <div id="isotope-container">
                             
-                            <div class="row desktop d-none">
+                            <div class="row desktop d-none new-relesed-1080">
 
                                 <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/artist/a7.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -63,7 +63,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/artist/a6.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -88,7 +88,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/artist/a5.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -113,7 +113,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/artist/a4.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -138,7 +138,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/artist/a3.jpg') }}" class="img-responsive" alt="portfolio 01">
@@ -163,7 +163,7 @@
                                 </div>
                                  <div class=" col-md-3  " >
 
-                                    <div class="portfolio-item">
+                                    <div class="portfolio-item text-center">
 
                                         <a href="" title="Add Description">
                                             <img src="{{ asset('image/artist/a2.jpg') }}" class="img-responsive" alt="portfolio 01">

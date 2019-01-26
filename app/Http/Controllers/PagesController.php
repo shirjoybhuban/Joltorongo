@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 
-
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -24,4 +23,10 @@ class PagesController extends Controller
     {
         return view('home');
     }
+
+    public function ajax()
+    {
+        return view('ajax');
+    }
+
 }
