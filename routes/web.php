@@ -28,6 +28,32 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/music_news', function () {
+    return view('music_news');
+});
+
+Route::get('/album', function () {
+    return view('album');
+});
+
+Route::get('/browse', function () {
+    return view('browse');
+});
+Route::get('/artist', function () {
+    return view('artist');
+});
+Route::get('/playlist', function () {
+    return view('playlist');
+});
+Route::get('/search', function () {
+    return view('search');
+});
+
+
+
+Route::get('/artist_dynamic', function() {
+    return View::make('playlist');
+});
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
