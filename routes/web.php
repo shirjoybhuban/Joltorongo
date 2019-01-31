@@ -49,7 +49,10 @@ Route::get('/search', function () {
     return view('search');
 });
 
-
+Route::resource('songs','SongsController');
+Route::resource('genre', 'GenresController');
+Route::resource('artists','ArtistsController');
+Route::resource('Album','AlbumsController');
 
 Route::get('/artist_dynamic', function() {
     return View::make('playlist');
