@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Artists;
 
 class ArtistsController extends Controller
 {
@@ -13,7 +14,8 @@ class ArtistsController extends Controller
      */
     public function index()
     {
-        //
+        $artists =  Artists::orderBy('name','desc')->get();
+        return view('artist')->with('artists', $artists);
     }
 
     /**

@@ -33,7 +33,7 @@
                 </a>
             </li>
             <li id="album">
-                <a href="#">
+                <a href="#album">
                     <i class="fas fa-image"></i>
                     Album
                 </a>
@@ -113,7 +113,7 @@
             
                     <div class="middle section" style="margin-bottom: 90px;">
                         
-                        @include('artist')
+                        @include('playlist')
                     
                     </div>		
                    

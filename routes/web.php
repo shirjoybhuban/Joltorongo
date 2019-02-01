@@ -39,9 +39,7 @@ Route::get('/album', function () {
 Route::get('/browse', function () {
     return view('browse');
 });
-Route::get('/artist', function () {
-    return view('artist');
-});
+
 Route::get('/playlist', function () {
     return view('playlist');
 });
@@ -51,8 +49,8 @@ Route::get('/search', function () {
 
 Route::resource('songs','SongsController');
 Route::resource('genre', 'GenresController');
-Route::resource('artists','ArtistsController');
-Route::resource('Album','AlbumsController');
+Route::resource('artist','ArtistsController');
+Route::resource('album','AlbumsController');
 
 Route::get('/artist_dynamic', function() {
     return View::make('playlist');

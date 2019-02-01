@@ -193,17 +193,17 @@
                                <div class="col-md-3 list_colum" >
                                 <div class="list-group list-group-flush">
                                   
-                                <?php
+                                
                                      // collet data from db in albhabetical order
                                 // https://www.w3schools.com/sql/sql_orderby.asp
                                 // Then diveded the array in 4 part 
                                 // try to put item in every colum
-                                     
-                                     for( $i = 0; $i<19; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Artist name </a>';
-                                     }
-                        
-                                  ?>
+                                
+                                    @foreach ($artists as $artist)
+                                        <h3>{{$artist->name}}</h3>
+                                    @endforeach
+                            
+                                
                                  </div>   
                                </div> 
                                <div class="col-md-3 list_colum" >
