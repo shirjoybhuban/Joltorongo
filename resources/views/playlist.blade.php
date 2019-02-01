@@ -1,4 +1,4 @@
-
+@extends('JS and CSS.jscss')
 <div class="playlistsContainer container-fluid">
 
 	<div class="gridViewContainers row ">

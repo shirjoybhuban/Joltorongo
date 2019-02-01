@@ -1,3 +1,4 @@
+@extends('JS and CSS.jscss')
 <!-- Album -->
     <div id="portfolio">
 

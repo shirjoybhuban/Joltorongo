@@ -47,6 +47,16 @@ Route::get('/search', function () {
     return view('search');
 });
 
+Route::get('/single_artist', function () {
+    return view('single_artist');
+});
+Route::get('/single_album_songlist', function () {
+    return view('single_album_songlist');
+});
+Route::get('/single_playlist', function () {
+    return view('single_playlist');
+});
+
 Route::resource('songs','SongsController');
 Route::resource('genre', 'GenresController');
 Route::resource('artist','ArtistsController');

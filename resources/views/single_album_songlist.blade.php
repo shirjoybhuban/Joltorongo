@@ -1,3 +1,4 @@
+@extends('JS and CSS.jscss')
 <div class="entityInfo">
 
 	<div class="leftSection">
