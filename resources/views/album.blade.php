@@ -212,59 +212,25 @@
                                <div class="col-md-3 text-center list_colum">
                                 <div class="list-group list-group-flush">
                                   
-                                <?php
-                                     // collet data from db in albhabetical order
-                                // https://www.w3schools.com/sql/sql_orderby.asp
-                                // Then diveded the array in 4 part 
-                                // try to put item in every colum
-                                     
-                                     for( $i = 0; $i<10; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Album name sdasd dd </a>';
-                                     }
-                        
-                                  ?>
+                           
                                  </div>   
                                </div> 
                                <div class="col-md-3 text-center list_colum" >
                                 <div class="list-grou list-group-flush">
                                   
-                                <?php
-                                     // collet data from db in albhabetical order
-                                // https://www.w3schools.com/sql/sql_orderby.asp
-                                     
-                                     for( $i = 0; $i<10; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Album name </a>';
-                                     }
-                        
-                                  ?>
+                                
                                  </div>   
                                </div> 
                                <div class="col-md-3 text-center list_colum" >
                                 <div class="list-group list-group-flush">
                                   
-                                <?php
-                                     // collet data from db in albhabetical order
-                                // https://www.w3schools.com/sql/sql_orderby.asp
-                                     
-                                     for( $i = 0; $i<10; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Album name </a>';
-                                     }
-                        
-                                  ?>
+                             
                                  </div>   
                                </div> 
                                <div class="col-md-3 text-center list_colum" >
                                 <div class="list-group list-group-flush ">
                                   
-                                <?php
-                                     // collet data from db in albhabetical order
-                                // https://www.w3schools.com/sql/sql_orderby.asp
-                                     
-                                     for( $i = 0; $i<10; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Album name </a>';
-                                     }
-                        
-                                  ?>
+                               
                                  </div>   
                                </div> 
                                 

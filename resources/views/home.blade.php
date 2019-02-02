@@ -4,21 +4,21 @@
 <html>
 <head>
     <title>Joltorongo Home</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
 </head>
 <body style="background: #222429;">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <script type="text/javascript" src="{{ URL::asset('js/ajax.js') }}"></script>           
 <div class="wrapper" >
     <!-- Sidebar  -->
     <nav id="sidebar" >
-
         <div class="sidebar-header">
             <h3>Joltorongo</h3>
             <strong>JT</strong>
         </div>
 
-        <ul class="list-unstyled components", id="clicker">
+        <ul class="list-unstyled components">
            
             <li id="auth">
                 <a href="#">
@@ -26,14 +26,14 @@
                    Hi, {{ Auth::user()->name }}
                 </a>
             </li>
-            <li id="album">
-                <a href="#album">
+            <li id="browse">
+                <a href="#">
                     <i class="fas fa-music"></i>
                     Browse
                 </a>
             </li>
             <li id="album">
-                <a href="#album">
+                <a href="#">
                     <i class="fas fa-image"></i>
                     Album
                 </a>
@@ -63,62 +63,59 @@
     </nav>
 
     <!-- Page Content  -->
-   
     <div id="content">
-        <div id="guts">
-                <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-                        <div class="container-fluid">
-            
-                            <button type="button" id="sidebarCollapse" class="btn btn-dark">
-                                <i class="fas fa-align-left"></i>
-                                
-                            </button>
-                        
-                            <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-align-justify"></i>
-                            </button>
-            
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="nav navbar-nav ml-auto">
-                                    <li class="nav-item dropdown nav-position">
-                                      <a href="">World Music </a>
-                                  </li>
-                                  <li class="nav-item dropdown nav-position">
-                                      <a href="" data-toggle="modal" data-target="#app">App</a>
-                                  </li>
-                                    <li class="nav-item dropdown nav-position" data-toggle="tooltip" data-placement="bottom" title="Double Click">
-                                        <!-- <a id="navbarDropdown" class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                         Logout 
-                                        </a> -->
-                                        <a href=""  data-toggle="dropdown">logout</a>
-                                        <div class="dropdown-menu dropdown-menu-right bg-secondary" aria-labelledby="navbarDropdown">
-                                          <a class="dropdown-item" href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                          </a>
-                                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                          </form>
-                                        </div>
-                                  </li>
-                                  
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-            
-            
-            
-                    <div class="middle section" style="margin-bottom: 90px;">
-                        
-                        @include('playlist')
+
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                    <i class="fas fa-align-left"></i>
                     
-                    </div>		
-                   
-        </div>     
-        
+                </button>
+            
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item dropdown nav-position">
+                          <a href="">World Music </a>
+                      </li>
+                      <li class="nav-item dropdown nav-position">
+                          <a href="" data-toggle="modal" data-target="#app">App</a>
+                      </li>
+                        <li class="nav-item dropdown nav-position" data-toggle="tooltip" data-placement="bottom" title="Double Click">
+				            <!-- <a id="navbarDropdown" class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+				             Logout 
+				            </a> -->
+                            <a href=""  data-toggle="dropdown">logout</a>
+				            <div class="dropdown-menu dropdown-menu-right bg-secondary" aria-labelledby="navbarDropdown">
+				              <a class="dropdown-item" href="{{ route('logout') }}"
+				                onclick="event.preventDefault();
+				                document.getElementById('logout-form').submit();">
+				                {{ __('Logout') }}
+				              </a>
+				              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+				                @csrf
+				              </form>
+				            </div>
+			          </li>
+                      
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+		<div class="middle section" style="margin-bottom: 90px;", id="dynamic">
+			
+			{{-- @include('album') --}}
+		
+		</div>		
+       
     </div>
 </div>
 
@@ -135,10 +132,9 @@
       
     </div>
   </div>
-</div>  
+</div class >  
 
-
-    @include('playerF.player')
+ @include('playerF.player')
 
 </body>
 </html>

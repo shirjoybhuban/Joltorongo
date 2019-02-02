@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Artists;
+use App\Album;
+use App\Songs;
+use JavaScript;
 
 class ArtistsController extends Controller
 {
@@ -16,6 +19,7 @@ class ArtistsController extends Controller
     {
         $artists =  Artists::orderBy('name','desc')->get();
         return view('artist')->with('artists', $artists);
+       
     }
 
     /**
@@ -47,7 +51,16 @@ class ArtistsController extends Controller
      */
     public function show($id)
     {
-        //
+        $artist = Artists::find($id);
+        $album = Album::where('artist', $id)->get();
+        $songs = Songs::where('artist', $id)->get();
+        JavaScript::put([
+            'single_artist',
+            'album',
+            'songs'
+        ]);
+        return view('single_artist')->with('artist', $artist)->with('album', $album)->with('songs',$songs);
+        
     }
 
     /**

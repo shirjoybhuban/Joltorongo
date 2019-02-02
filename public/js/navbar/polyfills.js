@@ -25,14 +25,18 @@ function classReg( className ) {
 // altho to be fair, the api sucks because it won't accept multiple classes at once
 var hasClass, addClass, removeClass;
 
-if ( 'classList' in document.documentElement ) {
-  hasClass = function( elem, c ) {
+if ('classList' in document.documentElement ) 
+{
+  hasClass = function( elem, c ) 
+  {
     return elem.classList.contains( c );
   };
-  addClass = function( elem, c ) {
+  addClass = function( elem, c ) 
+  {
     elem.classList.add( c );
   };
-  removeClass = function( elem, c ) {
+  removeClass = function( elem, c ) 
+  {
     elem.classList.remove( c );
   };
 }

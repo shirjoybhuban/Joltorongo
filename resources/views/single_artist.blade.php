@@ -1,12 +1,18 @@
+<script type="text/javascript">
+    var sites = {!! json_encode($songs->toArray()) !!};
+    console.log(sites[0].path);
+</script>
 @extends('JS and CSS.jscss')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <div class="entityInfo borderBottom">
 
 	<div class="leftSection">
-		<img src="{{ asset('image/artist/a1.jpg') }}">
+		<img src="{{$artist->path}}">
 	</div>
 
 	<div class="rightSection">
-		<h2>Artist name</h2>
+		<h2>{{$artist->name}}</h2>
 		<button class="btn-general_artist btn-yellow_aritst">PLAY</button>
 		
 
@@ -224,141 +230,38 @@
                             </div>
                             <!-- <div class="row web text-center wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".5s"> -->
                             <div class="web col-md-12">
-                            	<ul class="tracklist">
-										<li class='tracklistRow tracklistRow_artist '>
-											<div class='trackCount'>
-												<img class='play' src="{{ asset('image/icons/play.png') }}">
-												<span class='trackNumber'>1</span>
-											</div>
-
-
-											<div class='trackInfo'>
-												<span class='trackName'>Ke tumi</span>
-												
-											</div>
-
-											<div class='trackOptions'>
-												<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-											</div>
-
-											<div class='trackDuration' style="font-size:13;font-family: oswald;">
-												<span class='duration'>8.45</span>
-											</div>
-
-
-										</li>
-										<li class='tracklistRow tracklistRow_artist'>
-											<div class='trackCount'>
-												<img class='play' src="{{ asset('image/icons/play.png') }}">
-												<span class='trackNumber'>1</span>
-											</div>
-
-
-											<div class='trackInfo'>
-												<span class='trackName'>Ke tumi</span>
-												
-											</div>
-
-											<div class='trackOptions'>
-												<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-											</div>
-
-											<div class='trackDuration' style="font-size:13;font-family: oswald;">
-												<span class='duration'>8.45</span>
-											</div>
-
-
-										</li>
-										<li class='tracklistRow tracklistRow_artist'>
-											<div class='trackCount'>
-												<img class='play' src="{{ asset('image/icons/play.png') }}">
-												<span class='trackNumber'>1</span>
-											</div>
-
-
-											<div class='trackInfo'>
-												<span class='trackName'>Ke tumi</span>
-												
-											</div>
-
-											<div class='trackOptions'>
-												<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-											</div>
-
-											<div class='trackDuration' style="font-size:13;font-family: oswald;">
-												<span class='duration'>8.45</span>
-											</div>
-
-
-										</li>
-										<li class='tracklistRow tracklistRow_artist'>
-											<div class='trackCount'>
-												<img class='play' src="{{ asset('image/icons/play.png') }}">
-												<span class='trackNumber'>1</span>
-											</div>
-
-
-											<div class='trackInfo'>
-												<span class='trackName'>Ke tumi</span>
-												
-											</div>
-
-											<div class='trackOptions'>
-												<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-											</div>
-
-											<div class='trackDuration' style="font-size:13;font-family: oswald;">
-												<span class='duration'>8.45</span>
-											</div>
-
-
-										</li>
-										<li class='tracklistRow tracklistRow_artist'>
-											<div class='trackCount'>
-												<img class='play' src="{{ asset('image/icons/play.png') }}">
-												<span class='trackNumber'>1</span>
-											</div>
-
-
-											<div class='trackInfo'>
-												<span class='trackName'>Ke tumi</span>
-												
-											</div>
-
-											<div class='trackOptions'>
-												<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-											</div>
-
-											<div class='trackDuration' style="font-size:13;font-family: oswald;">
-												<span class='duration'>8.45</span>
-											</div>
-
-
-										</li>
-										<li class='tracklistRow tracklistRow_artist'>
-											<div class='trackCount'>
-												<img class='play' src="{{ asset('image/icons/play.png') }}">
-												<span class='trackNumber'>1</span>
-											</div>
-
-
-											<div class='trackInfo'>
-												<span class='trackName'>Ke tumi</span>
-												
-											</div>
-
-											<div class='trackOptions'>
-												<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-											</div>
-
-											<div class='trackDuration' style="font-size:13;font-family: oswald;">
-												<span class='duration'>8.45</span>
-											</div>
-
-
-										</li>
-									</ul>                           	
-									
+                                    @if(count($songs)>0)
+                                    <script type="text/javascript">
+                                        var sites = {!! json_encode($songs->toArray()) !!};
+                                        console.log(sites[0].path);
+                                    </script>
+                                        @foreach ($songs as $song)
+                                                <ul class="tracklist">
+                                                    <li class='tracklistRow tracklistRow_artist '>
+                                                        <div class='trackCount', id="play">
+                                                            <img class='play' src="{{ asset('image/icons/play.png') }}">
+                                                            <span class='trackNumber'>{{$song->albumOrder}}</span>
+                                                        </div>
+            
+            
+                                                        <div class='trackInfo'>
+                                                            <span class='trackName'>{{$song->title}}</span>
+                                                            
+                                                        </div>
+            
+                                                        <div class='trackOptions'>
+                                                            <img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
+                                                        </div>
+            
+                                                        <div class='trackDuration' style="font-size:13;font-family: oswald;">
+                                                            <span class='duration'>{{$song->duration}}</span>
+                                                        </div>
+            
+                                                    </li>
+                                                 </ul>                          
+                                          @endforeach
+                                     @endif
+                            	 			
 							</div>
                              
                                 
@@ -373,6 +276,8 @@
             </div>
 
         </div>
-
+        <div id="playernew">
+            @include('playerf.player')
+        </div>
     </div>
     <!-- ALbum Ends -->

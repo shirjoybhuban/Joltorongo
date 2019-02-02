@@ -1,3 +1,5 @@
+@extends('JS and CSS.jscss')
+
 <!-- Artist -->
     <div id="portfolio">
 
@@ -46,9 +48,7 @@
                                             <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
-                                                    
-                                                    <h3>Artist name</h3>
-
+                                               
                                                   
                                                    
 
@@ -71,10 +71,7 @@
                                             <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
-                                                    
-                                                    <h3>Artist name</h3>
-
-                                                  
+                                                 
                                                     
 
                                                 </div>
@@ -95,9 +92,6 @@
 
                                             <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
-
-                                                    
-                                                    <h3>Artist name</h3>
 
                                                   
                                                    
@@ -121,9 +115,7 @@
                                             <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
-                                                    
-                                                    <h3>Artist name</h3>
-
+                                     
                                                   
                                                     
 
@@ -147,9 +139,7 @@
                                                 <div class="portfolio-item-details text-center">
 
                                                     
-                                                    <h3>Artist name</h3>
-
-                                                  
+                                              
                                                     
 
                                                 </div>
@@ -171,9 +161,6 @@
                                             <div class="portfolio-item-overlay">
                                                 <div class="portfolio-item-details text-center">
 
-                                                    
-                                                    <h3>Artist name</h3>
-
                                                   
                                                     
 
@@ -193,59 +180,43 @@
                                <div class="col-md-3 list_colum" >
                                 <div class="list-group list-group-flush">
                                   
-                                
-                                     // collet data from db in albhabetical order
-                                // https://www.w3schools.com/sql/sql_orderby.asp
-                                // Then diveded the array in 4 part 
-                                // try to put item in every colum
-                                
-                                    @foreach ($artists as $artist)
-                                        <h3>{{$artist->name}}</h3>
-                                    @endforeach
+                                    
                             
-                                
+                                    @if(count($artists)>0)
+                                        @foreach ($artists as $artist)
+                                            <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
+                                        @endforeach
+                                    @endif
                                  </div>   
                                </div> 
                                <div class="col-md-3 list_colum" >
                                 <div class="list-grou list-group-flush">
                                   
-                                <?php
-                                     // collet data from db in albhabetical order
-                                // https://www.w3schools.com/sql/sql_orderby.asp
-                                     
-                                     for( $i = 0; $i<10; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Artist name </a>';
-                                     }
-                        
-                                  ?>
+                                    @if(count($artists)>0)
+                                        @foreach ($artists as $artist)
+                                            <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
+                                        @endforeach
+                                    @endif
                                  </div>   
                                </div> 
                                <div class="col-md-3 list_colum" >
                                 <div class="list-group list-group-flush">
-                                  
-                                <?php
-                                     // collet data from db in albhabetical order
-                                // https://www.w3schools.com/sql/sql_orderby.asp
-                                     
-                                     for( $i = 0; $i<10; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Artist name </a>';
-                                     }
-                        
-                                  ?>
+                                    @if(count($artists)>0)
+                                        @foreach ($artists as $artist)
+                                            <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
+                                        @endforeach
+                                    @endif
+                                    
                                  </div>   
                                </div> 
                                <div class="col-md-3 list_colum" >
                                 <div class="list-group list-group-flush ">
                                   
-                                <?php
-                                     // collet data from db in albhabetical order
-                                // https://www.w3schools.com/sql/sql_orderby.asp
-                                     
-                                     for( $i = 0; $i<10; $i++ ) {
-                                        echo '<a href="" class="list-group-item list-group-item-action list_colum_item"> Artist name </a>';
-                                     }
-                        
-                                  ?>
+                                    @if(count($artists)>0)
+                                        @foreach ($artists as $artist)
+                                            <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
+                                        @endforeach
+                                    @endif
                                  </div>   
                                </div> 
                                 
@@ -260,6 +231,7 @@
             </div>
 
         </div>
-
+        
     </div>
+   
     <!-- artist Ends -->

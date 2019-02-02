@@ -1,4 +1,4 @@
-(function(){
+window.onload = (function(){
 
 	var button = document.getElementById('cn-button'),
     wrapper = document.getElementById('cn-wrapper'),
@@ -6,8 +6,16 @@
 
 	//open and close menu when the button is clicked
 	var open = false;
-	button.addEventListener('click', handler, false);
-	wrapper.addEventListener('click', cnhandle, false);
+	if(button)
+	{
+		button.addEventListener('click', handler, false);
+
+	}
+	if(wrapper)
+	{
+		wrapper.addEventListener('click', cnhandle, false);
+
+	}
 
 	function cnhandle(e){
 		e.stopPropagation();
@@ -32,7 +40,11 @@
 	}
 	function closeNav(){
 		open = false;
-		button.innerHTML = "Login";
+		if(button)
+		{
+			button.innerHTML = "Login";
+
+		}
 		classie.remove(overlay, 'on-overlay');
 		classie.remove(wrapper, 'opened-nav');
 	}

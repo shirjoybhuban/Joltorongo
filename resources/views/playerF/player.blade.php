@@ -1,3 +1,7 @@
+<script type="text/javascript">
+  var sites = {!! json_encode($songs->toArray()) !!};
+  console.log(sites[0].path);
+</script>
 <div style="z-index: 1000">
   <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
@@ -31,11 +35,11 @@
       </div>
      
         <div class="jp-artist">
-         <button class="jp-artistPic" role="button" tabindex="0">play</button>
+         <button class="" role="button" tabindex="0">play</button>
          
          <div class="right">
            <span class="song-name">Ek Chera Ghuri</span>
-           <span class="text-center">By Bhuban</span>
+           <span class="text-center">By Momtaj</span>
          </div>
       </div>
     </div>

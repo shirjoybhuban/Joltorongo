@@ -5,6 +5,8 @@
   <head>
     <title>Joltorongo</title>
   </head>
+  
+  <script src="js/owl-carousel/owl.carousel.min.js"></script>
   <body>
 
     <!-- Preloader Start -->
