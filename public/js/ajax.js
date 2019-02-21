@@ -52,17 +52,9 @@ $(document).ready(function() {
     }));
 });
 
-$(document).ready(function() {
-    // console.log('ready');
-    $(document).on('click', ".list-group-item list-group-item-action list_colum_item", function()
-    {
-        var page_link = $(this).attr("href");
-        console.log(page_link);
-        $('#dynamic').fadeOut('slow', function()
-        {
-            $('#dynamic').load(page_link, function()
-            {
-                $('#dynamic').fadeIn('slow');
-            });
-        });
-    })});
+
+    
+$(document).on('click', "#artistPage li", function () {
+    $("#dynamic").load("/" +this.id)
+    console.log("/" +this.id)
+});

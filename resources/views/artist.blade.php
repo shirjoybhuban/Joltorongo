@@ -186,8 +186,7 @@
             
                                     @if(count($artists)>0)
                                         @foreach ($artists as $artist)
-                                            <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
-                                            
+                                            <li id="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </li>
                                         @endforeach
                                     @endif
 

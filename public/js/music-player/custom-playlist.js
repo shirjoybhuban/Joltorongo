@@ -32,7 +32,7 @@ $(document).ready(function() {
     );
 });
 
-$("#clicker").on("click", "li", function() {
+$(document).on("click", "#clicker li", function() {
     executed = true;
     // a = sites[0].title;
     // b = sites[0].path;
