@@ -93,4 +93,9 @@ class SongsController extends Controller
     {
         //
     }
+    
+    public function artist()
+    {
+        return $this->belongsTo('App\Artists');
+    }
 }

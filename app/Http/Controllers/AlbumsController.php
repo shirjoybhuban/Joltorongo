@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Album;
 use App\Songs;
-
+use App\Artists;
 class AlbumsController extends Controller
 {
     /**
@@ -50,7 +50,9 @@ class AlbumsController extends Controller
     {
         $album = Album::find($id);
         $songs = Songs::where('album', $id)->get();
-        return view('single_album_songlist')->with('album', $album)->with('songs',$songs); ;
+        $artistno = Songs::select('artist')->where('album', $id)->get();
+        $artist = Artists::find($artistno[0]);
+        return view('single_album_songlist')->with('album', $album)->with('songs',$songs)->with('artist',$artist); ;
     }
 
     /**

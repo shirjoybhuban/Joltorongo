@@ -96,4 +96,9 @@ class ArtistsController extends Controller
     {
         //
     }
+
+    public function songs()
+    {
+        return $this->hasMany('App\Songs');
+    }
 }

@@ -58,3 +58,8 @@ $(document).on('click', "#artistPage li", function () {
     $("#dynamic").load("/" +this.id)
     console.log("/" +this.id)
 });
+
+$(document).on('click', "#albumPage li", function () {
+    $("#dynamic").load("/" +this.id)
+    console.log("/" +this.id)
+});

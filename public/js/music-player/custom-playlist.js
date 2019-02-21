@@ -4,7 +4,8 @@ var myPlaylist;
 $(document).ready(function() {
     executed = false;
 
-    if (!executed) var arr = [];
+    if (!executed) 
+    var arr = [];
     var len = sites.length;
     for (var i = 0; i < len; i++) {
         arr.push({
@@ -34,14 +35,17 @@ $(document).ready(function() {
 
 $(document).on("click", "#clicker li", function() {
     executed = true;
-    // a = sites[0].title;
-    // b = sites[0].path;
-    // sites[0].title = sites[this.id].title;
-    // sites[0].path = sites[this.id].path;
-    // sites[this.id].title = a;
-    // sites[this.path] = b;
-
-    // console.log(sites[0]);
-
-    myPlaylist.play(this.id);
+    path = this.id
+    num = 0
+    console.log( path)
+    for(count = 0; count < myPlaylist.playlist.length; count++)
+    {
+        if(myPlaylist.playlist[count].mp3 == path)
+        {
+            console.log( myPlaylist.playlist[count].mp3)
+            num = count
+            console.log(num + "NUM")
+        }
+    }
+    myPlaylist.play(num)
 });

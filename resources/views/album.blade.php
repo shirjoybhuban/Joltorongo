@@ -211,11 +211,11 @@
                             <div class="row web artistlist-margin text-center" >
                         
                                 <div class="col-md-3 list_colum" >
-                                    <div class="list-group list-group-flush" id="artistPage">
+                                    <div class="list-group list-group-flush" id="albumPage">
                 
                                         @if(count($albums)>0)
                                             @foreach ($albums as $album)
-                                                <a href="album/{{$album->id}}" class="list-group-item list-group-item-action list_colum_item">{{$album->title}} </a>
+                                                <li id="album/{{$album->id}}" class="list-group-item list-group-item-action list_colum_item">{{$album->title}} </li>
                                             @endforeach
                                         @endif
     

@@ -257,7 +257,7 @@
                                                     @php $count= 0; @endphp
                                                     @foreach ($songs as $song)
                                                        
-                                                                <li class='tracklistRow tracklistRow_artist', id= {{$count}}>
+                                                                <li class='tracklistRow tracklistRow_artist', id= {{$song->path}}>
                                                                     <div class='trackCount', id="play">
                                                                         <img class='play' src="{{ asset('image/icons/play.png') }}">
                                                                         <span class='trackNumber'>{{$song->albumOrder}}</span>
@@ -265,7 +265,7 @@
 
 
                                                                     <div class='trackInfo'>
-                                                                        <span class='trackName'>{{$song->title}}</span>
+                                                                        <span id="title" class='trackName'>{{$song->title}}</span>
                                                                         <script>    
                                                                             var value = {!! json_encode($song->title, JSON_HEX_TAG) !!};
                                                                         </script>

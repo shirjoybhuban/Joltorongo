@@ -1,4 +1,4 @@
-
+@extends('JS and CSS.jscss')
 
 <div>
 
