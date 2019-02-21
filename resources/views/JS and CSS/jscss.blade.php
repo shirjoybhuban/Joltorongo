@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Jockey+One" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amaranth" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Candal" />
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab" rel="stylesheet">
     <!-- animate.css -->
     <link rel="stylesheet" href="{{ asset('css/animate/animate.css') }}">
     <!-- owl-carousel jquery slide  -->
@@ -31,30 +31,31 @@
     <!-- Page transition Animsition  -->
    <!--  <link rel="stylesheet" href="{{ asset('css/page_transition/animsition.css') }}"> -->
 
-     
 
-     <!-- Bootstrap -->   
+
+     <!-- Bootstrap -->
     <!-- <link href="{{ asset('css/Bootstarp/bootstrap.min.css') }}" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
 
     <link href="{{ asset('css/Bootstarp/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/Bootstarp/bootstrap-grid.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/Bootstarp/bootstrap-reboot.min.css') }}" rel="stylesheet">
-  
+
     <!-- All style sheet here -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    
 
-	
 
-	
-	
+
+
+
+
 @yield('master')
 @yield('home')
 @yield('auth.login')
 @yield('playerF.player')
-    
+
+
        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- All Script here -->
@@ -96,7 +97,7 @@
     <script src="{{ asset('js/music-player/jplayer.playlist.js') }}"></script>
     <!-- Music player Playlist -->
     <script src="{{ asset('js/music-player/jplayer.playlist.js') }}"></script>
-    <script src="{{ asset('js/music-player/custom-playlist.js') }}"></script>
+    {{-- <script src="{{ asset('js/music-player/custom-playlist.js') }}"></script> --}}
     <!-- Jquery filter ISOTOPE -->
     <script src="{{ asset('js/isotope/isotope.pkgd.min.js') }}"></script>
 

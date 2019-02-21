@@ -208,31 +208,23 @@
 
                             </div>
                             <!-- <div class="row web text-center wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".5s"> -->
-                            <div class="row web albumist-margin">
-                               <div class="col-md-3 text-center list_colum">
-                                <div class="list-group list-group-flush">
-                                  
-                           
-                                 </div>   
-                               </div> 
-                               <div class="col-md-3 text-center list_colum" >
-                                <div class="list-grou list-group-flush">
-                                  
-                                
-                                 </div>   
-                               </div> 
-                               <div class="col-md-3 text-center list_colum" >
-                                <div class="list-group list-group-flush">
-                                  
-                             
-                                 </div>   
-                               </div> 
-                               <div class="col-md-3 text-center list_colum" >
-                                <div class="list-group list-group-flush ">
-                                  
-                               
-                                 </div>   
-                               </div> 
+                            <div class="row web artistlist-margin text-center" >
+                        
+                                <div class="col-md-3 list_colum" >
+                                    <div class="list-group list-group-flush" id="artistPage">
+                
+                                        @if(count($albums)>0)
+                                            @foreach ($albums as $album)
+                                                <a href="album/{{$album->id}}" class="list-group-item list-group-item-action list_colum_item">{{$album->title}} </a>
+                                            @endforeach
+                                        @endif
+    
+                                    </div>   
+                                </div> 
+    
+                                        
+                            </div>
+                                         
                                 
                             </div>
                             

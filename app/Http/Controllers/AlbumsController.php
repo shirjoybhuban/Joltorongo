@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Album;
+use App\Songs;
 
 class AlbumsController extends Controller
 {
@@ -13,7 +15,8 @@ class AlbumsController extends Controller
      */
     public function index()
     {
-        //
+        $albums = Album::all();
+        return view('album')->with('albums', $albums);
     }
 
     /**
@@ -45,7 +48,9 @@ class AlbumsController extends Controller
      */
     public function show($id)
     {
-        //
+        $album = Album::find($id);
+        $songs = Songs::where('album', $id)->get();
+        return view('single_album_songlist')->with('album', $album)->with('songs',$songs); ;
     }
 
     /**

@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     $("#browse").click(function() 
     {
@@ -7,7 +8,6 @@ $(document).ready(function() {
             $("#dynamic").load("/browse").fadeIn(slow);
 
         });
-        console.log(this.index);
     });
 });
 $(document).ready(function() {
@@ -18,7 +18,6 @@ $(document).ready(function() {
             $("#dynamic").load("/album").fadeIn('slow');
 
         });
-        console.log(this.index);
     });
 });
 $(document).ready(function() {
@@ -29,7 +28,6 @@ $(document).ready(function() {
             $("#dynamic").load("/artist").fadeIn('slow');
 
         });
-        console.log(this.index);
     });
 });
 $(document).ready(function() {
@@ -40,16 +38,31 @@ $(document).ready(function() {
             $("#dynamic").load("/playlist").fadeIn('slow');
 
         });
-        console.log(this.index);
     });
 });
 $(document).ready(function() {
-    $("#search").click(function() 
+    $("#search").off('click').on('click',(function() 
     {
         $("#dynamic").fadeOut('slow',function()
         {
             $("#dynamic").load("/search").fadeIn('slow');
         });
-        console.log(this.index);
-    });
+        console.log('Button click');
+        
+    }));
 });
+
+$(document).ready(function() {
+    // console.log('ready');
+    $(document).on('click', ".list-group-item list-group-item-action list_colum_item", function()
+    {
+        var page_link = $(this).attr("href");
+        console.log(page_link);
+        $('#dynamic').fadeOut('slow', function()
+        {
+            $('#dynamic').load(page_link, function()
+            {
+                $('#dynamic').fadeIn('slow');
+            });
+        });
+    })});

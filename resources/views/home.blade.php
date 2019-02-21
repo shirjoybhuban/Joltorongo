@@ -1,12 +1,19 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/ajax.js"></script>
+<script type="text/javascript">
+    var sites = {!! json_encode($songs->toArray()) !!};
+    // console.log(sites[0].path);
+</script>
+    <script src="{{ asset('js/music-player/custom-playlist.js') }}"></script>
+
 @extends('JS and CSS.jscss')
-@section('home')	
+@section('home')
 <!DOCTYPE html>
 <html>
 <head>
     <title>Joltorongo Home</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/ajax.js"></script>
+
 </head>
 <body style="background: #222429;">
 
@@ -19,47 +26,47 @@
         </div>
 
         <ul class="list-unstyled components">
-           
+
             <li id="auth">
-                <a href="#">
+                <a>
                     <i class="fas fa-user-tie"></i>
                    Hi, {{ Auth::user()->name }}
                 </a>
             </li>
             <li id="browse">
-                <a href="#">
+                <a>
                     <i class="fas fa-music"></i>
                     Browse
                 </a>
             </li>
             <li id="album">
-                <a href="#">
+                <a>
                     <i class="fas fa-image"></i>
                     Album
                 </a>
             </li>
             <li id="artist">
-                <a href="#">
+                <a>
                     <i class="fas fa-users"></i>
                     Artist
                 </a>
             </li>
             <li id="playlist">
-                <a href="#">
+                <a>
                     <i class="fas fa-headphones"></i>
                     My Playlist
                 </a>
             </li>
             <li style="background: #212226;", id="search">
-                <a href="#">
+                <a>
                     <i class="fas fa-search"></i>
                     Search
                 </a>
             </li>
-            
+
         </ul>
 
-        
+
     </nav>
 
     <!-- Page Content  -->
@@ -70,9 +77,9 @@
 
                 <button type="button" id="sidebarCollapse" class="btn btn-dark">
                     <i class="fas fa-align-left"></i>
-                    
+
                 </button>
-            
+
                 <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-align-justify"></i>
                 </button>
@@ -87,7 +94,7 @@
                       </li>
                         <li class="nav-item dropdown nav-position" data-toggle="tooltip" data-placement="bottom" title="Double Click">
 				            <!-- <a id="navbarDropdown" class="nav-link dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-				             Logout 
+				             Logout
 				            </a> -->
                             <a href=""  data-toggle="dropdown">logout</a>
 				            <div class="dropdown-menu dropdown-menu-right bg-secondary" aria-labelledby="navbarDropdown">
@@ -101,8 +108,8 @@
 				              </form>
 				            </div>
 			          </li>
-                      
-                        
+
+
                     </ul>
                 </div>
             </div>
@@ -110,12 +117,10 @@
 
 
 
-		<div class="middle section" style="margin-bottom: 90px;", id="dynamic">
-			
-			{{-- @include('album') --}}
-		
-		</div>		
-       
+		<div class="middle section" style="margin-bottom: 90px;" id="dynamic">
+
+		</div>
+
     </div>
 </div>
 
@@ -129,10 +134,10 @@
       <div class="modal-body text-center">
         <img src="{{ asset('image/app/app.PnG') }}" class="img-responsive" alt="app-pic">
       </div>
-      
+
     </div>
   </div>
-</div class >  
+</div class >
 
  @include('playerF.player')
 

@@ -1,8 +1,11 @@
+
+
 @extends('JS and CSS.jscss')
+
 
 <!-- Artist -->
     <div id="portfolio">
-
+        
         <div class="">
 
             <div class="container-fluid">
@@ -15,7 +18,7 @@
                         <div id="isotope-filters" class="text-center">
 
                             
-                            <button class="btn" data-filter=".desktop"><span>New Artist</span></button>
+                            <button class="btn" id="artistPage1" data-filter=".desktop"><span>New Artist</span></button>
                             <!-- <button class="btn" data-filter=".mobile"><span>Mobile</span></button> -->
                             <button class="btn" data-filter=".web"><span>Artist list</span></button>
 
@@ -176,49 +179,21 @@
 
                             </div>
                             <!-- <div class="row web text-center wow fadeInUp"  data-wow-duration="1s" data-wow-delay=".5s"> -->
-                            <div class="row web artistlist-margin text-center">
+                            <div class="row web artistlist-margin text-center" >
+                                
                                <div class="col-md-3 list_colum" >
-                                <div class="list-group list-group-flush">
-                                  
-                                    
-                            
+                                <div class="list-group list-group-flush" id="artistPage">
+            
                                     @if(count($artists)>0)
                                         @foreach ($artists as $artist)
                                             <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
+                                            
                                         @endforeach
                                     @endif
+
                                  </div>   
                                </div> 
-                               <div class="col-md-3 list_colum" >
-                                <div class="list-grou list-group-flush">
-                                  
-                                    @if(count($artists)>0)
-                                        @foreach ($artists as $artist)
-                                            <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
-                                        @endforeach
-                                    @endif
-                                 </div>   
-                               </div> 
-                               <div class="col-md-3 list_colum" >
-                                <div class="list-group list-group-flush">
-                                    @if(count($artists)>0)
-                                        @foreach ($artists as $artist)
-                                            <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
-                                        @endforeach
-                                    @endif
-                                    
-                                 </div>   
-                               </div> 
-                               <div class="col-md-3 list_colum" >
-                                <div class="list-group list-group-flush ">
-                                  
-                                    @if(count($artists)>0)
-                                        @foreach ($artists as $artist)
-                                            <a href="artist/{{$artist->id}}" class="list-group-item list-group-item-action list_colum_item">{{$artist->name}} </a>
-                                        @endforeach
-                                    @endif
-                                 </div>   
-                               </div> 
+
                                 
                             </div>
                             

@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Artists;
+use App\Album;
+use App\Songs;
+use DB;
+use Illuminate\Support\Facades\Auth;
 class SongsController extends Controller
 {
     /**
@@ -13,7 +17,15 @@ class SongsController extends Controller
      */
     public function index()
     {
-        //
+        if(Auth::guest())
+		{
+    		return view('master');
+		}
+        else
+        {
+            $songs =  Songs::all();
+            return view('home')->with('songs', $songs);
+        }
     }
 
     /**

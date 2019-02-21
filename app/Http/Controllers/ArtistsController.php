@@ -7,6 +7,8 @@ use App\Artists;
 use App\Album;
 use App\Songs;
 use JavaScript;
+use DB;
+
 
 class ArtistsController extends Controller
 {
@@ -18,6 +20,7 @@ class ArtistsController extends Controller
     public function index()
     {
         $artists =  Artists::orderBy('name','desc')->get();
+        // $artists = DB::select('Select * From artists');
         return view('artist')->with('artists', $artists);
        
     }
@@ -54,12 +57,9 @@ class ArtistsController extends Controller
         $artist = Artists::find($id);
         $album = Album::where('artist', $id)->get();
         $songs = Songs::where('artist', $id)->get();
-        JavaScript::put([
-            'single_artist',
-            'album',
-            'songs'
-        ]);
+    
         return view('single_artist')->with('artist', $artist)->with('album', $album)->with('songs',$songs);
+        
         
     }
 

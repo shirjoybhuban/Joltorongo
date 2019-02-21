@@ -6,8 +6,8 @@
 	</div>
 
 	<div class="rightSection">
-		<h2>Album title</h2>
-		<p>By artistName</p>
+		{{-- <h2>{{$album->title}}</h2> --}}
+		<p></p>
 		<p>9 songs</p>
 
 	</div>
@@ -16,137 +16,28 @@
 
 <div class="container-fluid">
 	<ul class="tracklist">
-		<li class='tracklistRow'>
-			<div class='trackCount'>
-				<img class='play' src="{{ asset('image/icons/play.png') }}">
-				<span class='trackNumber'>1</span>
-			</div>
+		@foreach ($songs as $song)
+			<li class='tracklistRow'>
+					<div class='trackCount'>
+						<img class='play' src="{{ asset('image/icons/play.png') }}">
+						<span class='trackNumber'>{{$song->albumOrder}}</span>
+					</div>
+		
+		
+					<div class='trackInfo'>
+						<span class='trackName'>{{$song->title}}</span>
+						<span class='artistName'>Dhrubo Bhai</span>
+					</div>
+		
+					<div class='trackOptions'>
+						<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
+					</div>
+		
+					<div class='trackDuration' style="font-size:13;font-family: oswald;">
+						<span class='duration'>8.45</span>
+					</div>
 
-
-			<div class='trackInfo'>
-				<span class='trackName'>Ke tumi</span>
-				<span class='artistName'>Bhuban malik</span>
-			</div>
-
-			<div class='trackOptions'>
-				<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-			</div>
-
-			<div class='trackDuration' style="font-size:13;font-family: oswald;">
-				<span class='duration'>8.45</span>
-			</div>
-
-
-		</li>
-		<li class='tracklistRow'>
-			<div class='trackCount'>
-				<img class='play' src="{{ asset('image/icons/play.png') }}">
-				<span class='trackNumber'>1</span>
-			</div>
-
-
-			<div class='trackInfo'>
-				<span class='trackName'>Ke tumi</span>
-				<span class='artistName'>Bhuban malik</span>
-			</div>
-
-			<div class='trackOptions'>
-				<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-			</div>
-
-			<div class='trackDuration' style="font-size:13;font-family: oswald;">
-				<span class='duration'>8.45</span>
-			</div>
-
-
-		</li>
-		<li class='tracklistRow'>
-			<div class='trackCount'>
-				<img class='play' src="{{ asset('image/icons/play.png') }}">
-				<span class='trackNumber'>1</span>
-			</div>
-
-
-			<div class='trackInfo'>
-				<span class='trackName'>Ke tumi</span>
-				<span class='artistName'>Bhuban malik</span>
-			</div>
-
-			<div class='trackOptions'>
-				<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-			</div>
-
-			<div class='trackDuration' style="font-size:13;font-family: oswald;">
-				<span class='duration'>8.45</span>
-			</div>
-
-
-		</li>
-		<li class='tracklistRow'>
-			<div class='trackCount'>
-				<img class='play' src="{{ asset('image/icons/play.png') }}">
-				<span class='trackNumber'>1</span>
-			</div>
-
-
-			<div class='trackInfo'>
-				<span class='trackName'>Ke tumi</span>
-				<span class='artistName'>Bhuban malik</span>
-			</div>
-
-			<div class='trackOptions'>
-				<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-			</div>
-
-			<div class='trackDuration' style="font-size:13;font-family: oswald;">
-				<span class='duration'>8.45</span>
-			</div>
-
-
-		</li>
-		<li class='tracklistRow'>
-			<div class='trackCount'>
-				<img class='play' src="{{ asset('image/icons/play.png') }}">
-				<span class='trackNumber'>1</span>
-			</div>
-
-
-			<div class='trackInfo'>
-				<span class='trackName'>Ke tumi</span>
-				<span class='artistName'>Bhuban malik</span>
-			</div>
-
-			<div class='trackOptions'>
-				<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-			</div>
-
-			<div class='trackDuration' style="font-size:13;font-family: oswald;">
-				<span class='duration'>8.45</span>
-			</div>
-
-
-		</li>
-		<li class='tracklistRow'>
-			<div class='trackCount'>
-				<img class='play' src="{{ asset('image/icons/play.png') }}">
-				<span class='trackNumber'>1</span>
-			</div>
-
-
-			<div class='trackInfo'>
-				<span class='trackName'>Ke tumi</span>
-				<span class='artistName'>Bhuban malik</span>
-			</div>
-
-			<div class='trackOptions'>
-				<img class='optionsButton' src="{{ asset('image/icons/like.png') }}">
-			</div>
-
-			<div class='trackDuration' style="font-size:13;font-family: oswald;">
-				<span class='duration'>8.45</span>
-			</div>
-
-
-		</li>
+			</li>
+		@endforeach
 	</ul>
 </div>

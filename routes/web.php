@@ -15,18 +15,8 @@
 //     return view('master');
 // });
 
-Route::get('/', function () {
-    if(Auth::guest())
-		{
-    		return view('master');
-		}
-     else{
-     		 return view('home');
-     	}
-});
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/','SongsController@index');
+Route::get('/home','SongsController@index');
 
 Route::get('/music_news', function () {
     return view('music_news');
