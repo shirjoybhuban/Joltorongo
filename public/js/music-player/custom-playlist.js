@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     if (!executed) 
     var arr = [];
-    var len = sites.length;
+    var len = sites.length; // sites has the  the list of songs I should change the name but I am lazy AF
     for (var i = 0; i < len; i++) {
         arr.push({
             title: sites[i].title,
@@ -14,7 +14,6 @@ $(document).ready(function() {
             oga: sites[i].path
         });
     }
-    // console.log(sites[0]);
     myPlaylist = new jPlayerPlaylist(
         {
             jPlayer: "#jquery_jplayer_1",
@@ -33,18 +32,15 @@ $(document).ready(function() {
     );
 });
 
-$(document).on("click", "#clicker li", function() {
+$(document).on("click", "#clicker li", function() {  // Here both the list of songs in artist and album blades have id clicker
     executed = true;
     path = this.id
     num = 0
-    console.log( path)
     for(count = 0; count < myPlaylist.playlist.length; count++)
     {
         if(myPlaylist.playlist[count].mp3 == path)
         {
-            console.log( myPlaylist.playlist[count].mp3)
             num = count
-            console.log(num + "NUM")
         }
     }
     myPlaylist.play(num)

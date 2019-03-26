@@ -9,7 +9,6 @@
 		<h2>{{$album->title}}</h2>
 		<script type="text/javascript">
 			var val = {!! json_encode($artist->toArray()) !!};
-			console.log(val);
 		</script>
 
 		<p>{{$artist[0]->name}}</p>
@@ -39,7 +38,7 @@
 					</div>
 		
 					<div class='trackDuration' style="font-size:13;font-family: oswald;">
-						<span class='duration'>8.45</span>
+						<span class='duration'>{{$song->duration}}</span>
 					</div>
 
 			</li>

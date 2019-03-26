@@ -2,7 +2,6 @@
 <script src="js/ajax.js"></script>
 <script type="text/javascript">
     var sites = {!! json_encode($songs->toArray()) !!};
-    // console.log(sites[0].path);
 </script>
     <script src="{{ asset('js/music-player/custom-playlist.js') }}"></script>
 

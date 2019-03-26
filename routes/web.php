@@ -11,19 +11,12 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('master');
-// });
 
 Route::get('/','SongsController@index');
 Route::get('/home','SongsController@index');
 
 Route::get('/music_news', function () {
     return view('music_news');
-});
-
-Route::get('/album', function () {
-    return view('album');
 });
 
 Route::get('/browse', function () {
@@ -33,19 +26,11 @@ Route::get('/browse', function () {
 Route::get('/playlist', function () {
     return view('playlist');
 });
-Route::get('/search', function () {
-    return view('search');
-});
-
-Route::get('/single_artist', function () {
-    return view('single_artist');
-});
-Route::get('/single_album_songlist', function () {
-    return view('single_album_songlist');
-});
 Route::get('/single_playlist', function () {
     return view('single_playlist');
 });
+
+Route::get('index','SearchController@search');
 
 Route::resource('songs','SongsController');
 Route::resource('genre', 'GenresController');

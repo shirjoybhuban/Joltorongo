@@ -1,8 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript" src="/js/artist.js"></script>
 <script type="text/javascript">
     var sites = {!! json_encode($songs->toArray()) !!};
-    console.log(sites[0].path);
 </script>
     {{-- <script src="{{ asset('js/music-player/custom-playlist.js') }}"></script> --}}
 @extends('JS and CSS.jscss')
@@ -251,7 +249,6 @@
                                                 @if(count($songs)>0)
                                                 <script type="text/javascript">
                                                     var sites = {!! json_encode($songs->toArray()) !!};
-                                                    console.log(sites[0].path);
                                                 </script>
                                                 <ul class="tracklist" id='clicker'>
                                                     @php $count= 0; @endphp
@@ -319,7 +316,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
     var sites = {!! json_encode($songs->toArray()) !!};
-    console.log(sites[0].path);
 </script>
 {{-- <script src="{{ asset('js/music-player/custom-playlist.js') }}"></script> --}}
 <script src="{{ asset('js/artist.js') }}"></script>

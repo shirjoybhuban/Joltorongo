@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Laravel\Scout\Searchable;
 use App\Artists;
 use App\Album;
 use App\Songs;

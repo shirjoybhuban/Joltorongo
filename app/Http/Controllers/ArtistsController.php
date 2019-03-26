@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Artists;
 use App\Album;
 use App\Songs;
+use Laravel\Scout\Searchable;
 use JavaScript;
 use DB;
 
