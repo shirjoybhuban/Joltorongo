@@ -93,6 +93,10 @@
     iframe {
         width: 1024px;
     }
+    /*searchbt*/
+    .srcbtn{
+        margin-left: -53;
+    }
        
 }
 
@@ -105,7 +109,10 @@
       width: 619px;
       height: 88%;
     }
-
+    /*searchbt*/
+    .srcbtn{
+        margin-left: -100;
+    }
     /* home */
         /* upeerpart */
     .container{
@@ -144,7 +151,9 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
     
-
+    .srcbtn{
+        margin-left: -120;
+    }
 
      /*home*/
          /* upeerpart */
@@ -188,6 +197,7 @@
 /* Small Devices (Portrait Tablets & Small Desktops) */
 
 @media (min-width: 768px) and (max-width: 991px) {
+   
     /*home*/
             /* upeerpart */
     .container{
@@ -293,6 +303,22 @@
 
 @media (max-width: 480px) {
         /*home*/
+
+    .logo-size {
+        width: 270px;
+        height: 140px;
+        margin-left: 12px;
+    }
+    .home-content-feel{
+ 
+font-size: 48px;
+
+}
+.btn-general {
+    
+    padding: 8px 30px 8px 30px;
+    
+}
         .align-toMusic-logo{
         margin-bottom: 0px;
 
@@ -337,16 +363,20 @@
     margin-left: 0px;
     margin-right:  140px;
 }
+
 /* Music player*/
 
 
 .jp-audio .jp-controls {
-  width: 136px; }
-  .jp-volume-controls {
-    left: 140px;
+   width: 246px;
+   top: 14px;; }
+.jp-volume-controls {
+    left: 31px;
+    top: 113px;
   }
 .jp-audio .jp-type-playlist .jp-toggles {
     left: 173px;
+    top: 110px;
   }
 .jp-interface .jp-artist {
     margin: -79px;
@@ -360,18 +390,27 @@
     height: 0px;
 }
 .jp-audio .jp-interface {
-    height: 174px;
+    height: 149px;
 }
 .jp-audio .jp-type-playlist .jp-progress {
-   left: 94px;
-    width: 214px;
+   left: 32px;
+   width: 214px;
+   top: 86px;
+}
+.jp-audio .jp-type-playlist .jp-time-holder{
+  left: 260px;
+   width: 214px;
+   top: 80px;
+}
+.jp-audio .jp-type-playlist .jp-time-holder .jp-duration{
+ display: none;
 }
 .jp-audio .jp-progress {
-    top: 82px;
+    top: 55px;
     height: 8px;
 }
 .jp-time-holder {
-    display: none;
+    /*display: none;*/
 }
 .jp-stop{
     display: none;

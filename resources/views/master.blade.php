@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Joltorongo</title>
   </head>
   
-  <script src="js/owl-carousel/owl.carousel.min.js"></script>
   <body>
 
     <!-- Preloader Start -->
@@ -57,7 +58,7 @@
             <div id="home-button-parent">
               <!-- <a href="" class="btn btn-general">BHUBAN</a> -->
               <div class="col-md-12 align-toMusic-button" id="home-button-child">
-              <a href="#" class="btn-general btn-yellow"  role="button">Discover</a>
+              <a href="{{ route('register') }}" class="btn-general btn-yellow"  role="button">Discover</a>
               <!-- <a href="#" class="btn btn-general btn-home btn-yellow col-sm-2" role="button">Sign Up</a> -->
             </div>
             </div>
@@ -85,7 +86,7 @@
               <img src="{{ asset('image/album/a1.jpg') }}" alt="album Album" class="img-responsive">
               <div class="album-overlay">
                 <div class="album-info text-center">
-                  <a href="#">Album name</a>
+                  <a href="{{ route('register') }}">Tumi ar Ami</a>
                 </div>
               </div>
             </div>
@@ -94,7 +95,7 @@
               <img src="{{ asset('image/album/a2.jpg') }}" alt="team Album" class="img-responsive">
               <div class="album-overlay">
                 <div class="album-info text-center">
-                  <a href="#" class="text">Album name</a>
+                  <a href="{{ route('register') }}" class="text">GONTOBBOHIN</a>
                 </div>
               </div>
             </div>
@@ -103,7 +104,7 @@
               <img src="{{ asset('image/album/a3.jpg') }}" alt="team Album" class="img-responsive">
               <div class="album-overlay">
                 <div class="album-info text-center">
-                  <a href="#">Album name</a>
+                  <a href="{{ route('register') }}">Boishakh</a>
                 </div>
               </div>
             </div>
@@ -112,7 +113,7 @@
               <img src="{{ asset('image/album/a4.jpg') }}" alt="team Album" class="img-responsive">
               <div class="album-overlay">
                 <div class="album-info text-center">
-                  <a href="#">Album name</a>
+                  <a href="{{ route('register') }}">Dana</a>
                 </div>
               </div>
             </div>
@@ -121,7 +122,7 @@
               <img src="{{ asset('image/album/a5.jpg') }}" alt="team Album" class="img-responsive">
               <div class="album-overlay">
                 <div class="album-info text-center">
-                  <a href="#">Album name</a>
+                  <a href="{{ route('register') }}">Meghboron</a>
                 </div>
               </div>
             </div>
@@ -130,7 +131,7 @@
               <img src="{{ asset('image/album/a6.jpg') }}" alt="team Album" class="img-responsive">
               <div class="album-overlay">
                 <div class="album-info text-center">
-                  <a href="#">Album name</a>
+                  <a href="{{ route('register') }}">Se Eka</a>
                 </div>
               </div>
             </div>
@@ -139,7 +140,7 @@
               <img src="{{ asset('image/album/a7.jpg') }}" alt="team Album" class="img-responsive">
               <div class="album-overlay">
                 <div class="album-info text-center">
-                  <a href="#">Album name</a>
+                  <a href="{{ route('register') }}">Bristy</a>
                 </div>
               </div>
             </div>
@@ -148,7 +149,7 @@
               <img src="{{ asset('image/album/a8.jpg') }}" alt="team Album" class="img-responsive">
               <div class="album-overlay">
                 <div class="album-info text-center">
-                  <a href="#">Album name</a>
+                  <a href="{{ route('register') }}">Nodoi</a>
                 </div>
               </div>
             </div>
@@ -169,7 +170,7 @@
                 
                 <h1>Meet Our<br>New<strong class="album-left-color">Artist</strong> </h1>
                 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, repellat, eos! Dignissimos expedita totam cum quidem autem alias dolorum error a quia optio eligendi, amet animi reprehenderit, quaerat.</p>
+                <p>Each month we bring you our curated list of up and coming artists. Be at the heart of the music movement in Bangladesh. Discover the next big star.</p>
               </div>
             </div>
             <!-- artist Right Side -->
@@ -180,7 +181,7 @@
                   <img src="{{ asset('image/artist/a1.jpg') }}" alt="album Album" class="img-responsive">
                   <div class="album-overlay">
                     <div class="album-info text-center">
-                      <a href="#">Album name</a>
+                      <a href="{{ route('register') }}">Symom</a>
                     </div>
                   </div>
                 </div>
@@ -189,7 +190,7 @@
                   <img src="{{ asset('image/artist/a2.jpg') }}" alt="album Album" class="img-responsive">
                   <div class="album-overlay">
                     <div class="album-info text-center">
-                      <a href="#">Album name</a>
+                      <a href="{{ route('register') }}">Saba</a>
                     </div>
                   </div>
                 </div>
@@ -198,7 +199,7 @@
                   <img src="{{ asset('image/artist/a3.jpg') }}" alt="album Album" class="img-responsive">
                   <div class="album-overlay">
                     <div class="album-info text-center">
-                      <a href="#">Album name</a>
+                      <a href="{{ route('register') }}">Mollah</a>
                     </div>
                   </div>
                 </div>
@@ -207,7 +208,7 @@
                   <img src="{{ asset('image/artist/a4.jpg') }}" alt="album Album" class="img-responsive">
                   <div class="album-overlay">
                     <div class="album-info text-center">
-                      <a href="#">Album name</a>
+                      <a href="{{ route('register') }}">Minar</a>
                     </div>
                   </div>
                 </div>
@@ -216,7 +217,7 @@
                   <img src="{{ asset('image/artist/a5.jpg') }}" alt="album Album" class="img-responsive">
                   <div class="album-overlay">
                     <div class="album-info text-center">
-                      <a href="#">Album name</a>
+                      <a href="{{ route('register') }}">RIP AB</a>
                     </div>
                   </div>
                 </div>
@@ -225,7 +226,7 @@
                   <img src="{{ asset('image/artist/a6.jpg') }}" alt="album Album" class="img-responsive">
                   <div class="album-overlay">
                     <div class="album-info text-center">
-                      <a href="#">Album name</a>
+                      <a href="{{ route('register') }}">Abdullah</a>
                     </div>
                   </div>
                 </div>
@@ -264,15 +265,11 @@
                   </div>
                 </div>
                 <div class="text-center description row">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Free tier users listen to all your favorite artist all day long, and support them through ads.
+                    </p>
                 </div>
                 <div class="price-button">
-                  <a class="btn-general btn-yellow" href="#" title="Get Started" role="button">GO</a>
+                  <a class="btn-general btn-yellow" href="{{ route('register') }}" title="Get Started" role="button">GO</a>
                 </div>
               </div>
             </div>
@@ -285,21 +282,16 @@
                 <div class="price">
                   <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                      <h2>700</h2>
+                      <h2>200</h2>
                       <p>TK/Month</p>
                     </div>
                   </div>
                 </div>
                 <div class="text-center description row">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Unlimited tiers users will be able to listen to all the music their heart desires and completely add free.</p>
                 </div>
                 <div class="price-button">
-                  <a class="btn-general btn-yellow" href="#" title="Get Started" role="button">GO</a>
+                  <a class="btn-general btn-yellow" href="{{ route('register') }}" title="Get Started" role="button">GO</a>
                 </div>
               </div>
             </div>
@@ -338,9 +330,9 @@
     <section class="contact-bg">
       <div class="content-box-lg contact-bg-overlay">
         <div class="container">
-          <div class="row">
+          <div class="row ">
             <!-- left parts start -->
-            <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class="col-md-12 col-sm-12  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
               
                 <!-- Contact Left -->
                 <div id="contact-left">
@@ -348,15 +340,15 @@
                     <h5>Who We Are</h5>
                     <h2>Get<br>In <strong style="color: #f66f6f">Touch</strong></h2>
                   </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias modi est itaque aliquam sit, minima esse nihil mollitia no.</p>
+                  <p>If you have any queries or encounter bugs or want to promote in our sites. Contact as through any of the following channel.</p>
                   <div id="offices">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="office">
                           <h4>North South University</h4>
                           <ul class="office-details">
-                            <li><i class="fa fa-mobile" style="color: #f66f6f"></i><span>+8801771502072</span></li>
-                            <li><i class="fa fa-envelope" style="color: #f66f6f"></i><span>support@northsouth.com</span></li>
+                            <li><i class="fa fa-mobile" style="color: #f66f6f"></i><span>+8801771502072+1</span></li>
+                            <li><i class="fa fa-envelope" style="color: #f66f6f"></i><span>joltorongo@northsouth.com</span></li>
                             <li><i class="fa fa-map-marker" style="color: #f66f6f"></i><span>Plot, 15, Block B Kuril - NSU Rd<br>Dhaka 1229.</span></li>
                           </ul>
                         </div>
@@ -366,9 +358,9 @@
                 <div class="row">
                   <div class="social-icon col-sm-12 ">
                     <ul>
-                      <li><a href="#" class="fab fa-facebook faba"></a></li>
-                      <li> <a href="#" class="fab fa-google-plus-g faba"></a> </li>
-                      <li><a href="#" class="fab fa-instagram faba"></a> </li>
+                      <li><a href="https://www.facebook.com/shirjoybhuban" class="fab fa-facebook faba" style="color: #ccd9ff;"></a></li>
+                      <li> <a href="https://www.facebook.com/rifat.dhrubo" class="fab fa-facebook faba" style="color: #99b3ff;"></a> </li>
+                      <li><a href="https://www.facebook.com/nahin22" class="fab fa-facebook faba" style="color: #668cff;"></a> </li>
                     </ul>
                   </div>
                 </div>
@@ -378,7 +370,7 @@
             </div>
             <!-- left parts end -->
             <!-- r8 parts start -->
-            <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
+         <!--    <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
               <form class="contact1-form">
                 <span class="contact1-form-title">
                   Anything to Say
@@ -409,7 +401,7 @@
                 </div>
               </form>
               
-            </div>
+            </div> -->
             <!-- r8 parts end -->
           </div>
         </div>
@@ -421,42 +413,18 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+
             <p>
-              Copyright &copy; 2018-19 All Rights Reserved By <span>Joltorongo$BBN</span>
+              Copyright &copy;All Rights Reserved By <span>Joltorongo$BBN</span><span><a href="/contact" class="btn btn-warning">DEVELOPERS</a></span>
             </p>
           </div>
         </div>
       </div>
       <!-- Back To Top -->
-      <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
+      <!-- <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button">
         <i class="fa fa-angle-up"></i>
-      </a>
+      </a> -->
     </footer>
-    <!-- Footer Ends -->
-<!-- Modal -->
-<!--     <div class="md-modal md-effect-18" id="modal-18">
-          <div class="md-content">
-            <h3>Modal Dialog</h3>
-            <div>
-              <p>This is a modal window. You can do the following things with it:</p>
-              <ul>
-                <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                <li><strong>Close:</strong> click on the button below to close the modal.</li>
-              </ul>
-              <button class="md-close">Close me!</button>
-            </div>
-          </div>
-         </div>
-
-        <button class="md-trigger md-setperspective" data-modal="modal-18">Make way!</button>
-        <div class="md-overlay"></div> -->
-<!-- modal end -->
- <!-- Animsition -->
-<!--   <div class="animsition-overlay" data-animsition-overlay="true">
-    <a href="{{ route('login') }}" class="animsition-link">animsition link 1</a>
-  
-  </div> -->
 
 
   </body>

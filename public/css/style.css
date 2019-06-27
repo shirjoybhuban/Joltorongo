@@ -24,7 +24,8 @@ p {
 }
 
 section {
-    background: #fff;
+    /*background: #fff;*/
+    background: linear-gradient(90deg, rgba(237,237,237,1) 49%, rgba(255,212,212,0.9640056706276261) 85%, rgba(232,226,255,0.9752101524203431) 100%);
     overflow: hidden;
 }
 
@@ -59,8 +60,8 @@ section {
     margin-left: -34px;*/
     margin-top: -100px;
     margin-left: -100px;
-    
-    
+
+
 }
 
 /* =========================================
@@ -215,7 +216,7 @@ ul.navbar-nav>li>a:focus {
 .btn-yellow {
     color: #fff;
     border: 4px solid #f66f6f;
-    
+
 }
 
 .btn-yellow:hover,
@@ -227,7 +228,7 @@ ul.navbar-nav>li>a:focus {
 }
 /* homel logo */
 .logo-size{
-  
+
   width: 500px;
   height: 260px
 }
@@ -263,7 +264,7 @@ ul.navbar-nav>li>a:focus {
      text-align: center;
      display:block;
 
-    
+
 }
 .album-head p {
      color: #f66f6f;
@@ -278,7 +279,7 @@ ul.navbar-nav>li>a:focus {
     font-family: Jockey One;
     font-size: 40px;
     font-weight: 6px;
-  
+
 }
 
 .album {
@@ -292,10 +293,10 @@ ul.navbar-nav>li>a:focus {
 
 
 .album:hover {
-   
+
     -ms-transform: scale(1.09); /* IE 9 */
     -webkit-transform: scale(1.09); /* Safari 3-8 */
-    transform: scale(1.04); 
+    transform: scale(1.04);
 }
 
 .album-overlay {
@@ -341,20 +342,20 @@ ul.navbar-nav>li>a:focus {
                 artist
 ============================================ */
 .album-left{
-    
+
     padding-top: 10px;
 }
 .album-left p{
     font-family: Amaranth;
     font-size: 15px;
     font-weight: 0px;
-    
+
 }
 .album-left h1{
     font-family: Jockey One;
     font-size: 36px;
     font-weight: 10px;
-    
+
 }
 .album-left-color{
     color: #f66f6f;
@@ -371,14 +372,14 @@ ul.navbar-nav>li>a:focus {
     font-family: Jockey One;
     font-size: 46px;
     font-weight: 10px;
-    
+
 }
 
 .pricing-table {
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-    padding: 42px 0px;
+    padding: 39px 0px;
     -webkit-transition: all 400ms linear;
     transition: all 400ms linear;
     -webkit-transition:transform .6s;
@@ -395,7 +396,7 @@ ul.navbar-nav>li>a:focus {
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     padding: 24px 0;
-    
+
 }
 
 .pricing-table .price h2 {
@@ -411,8 +412,8 @@ ul.navbar-nav>li>a:focus {
 .pricing-table:hover .price h2 {
         -ms-transform: scale(1.3); /* IE 9 */
      scale(1.3); /* Safari 3-8 */
-    transform: scale(1.3); 
-   
+    transform: scale(1.3);
+
 }
 .pricing-table .description{
     font-family: "Open Sans", sans-serif;
@@ -425,7 +426,7 @@ ul.navbar-nav>li>a:focus {
     width: 40%;
     border-radius: 14px;
     padding: 5px 30px 5px 30px;
-    
+
 }
 .price-button{
     text-align: center;
@@ -467,7 +468,7 @@ ul.navbar-nav>li>a:focus {
     background: #f66f6f;
     -ms-transform: scale(1.01); /* IE 9 */
     -webkit-transform: scale(1.01); /* Safari 3-8 */
-    transform: scale(1.01); 
+    transform: scale(1.01);
 }
 
 
@@ -488,7 +489,7 @@ ul.navbar-nav>li>a:focus {
     color: #f66f6f;
     -ms-transform: scale(1.09); /* IE 9 */
     -webkit-transform: scale(1.09); /* Safari 3-8 */
-    transform: scale(1.04); 
+    transform: scale(1.04);
 }
 #quote-statement p {
     font-size: 14px;
@@ -517,7 +518,7 @@ ul.navbar-nav>li>a:focus {
 
 #contact-left p {
     margin: 25px 0 30px -1px;
-    
+
 }
 
 .vertical-heading-1 h5 {
@@ -847,7 +848,7 @@ position: fixed;
   margin: -63px;
   padding: 0;
   overflow: hidden;
-  margin-right: 42px; 
+  margin-right: 42px;
   width: 285px;
   float: right;
   display: block;}
@@ -869,7 +870,7 @@ position: fixed;
 
 
 .jp-artist .right {
-  
+
   float: right;
   margin-right: 20px;
   margin-left: 30px;
@@ -903,11 +904,22 @@ position: fixed;
 /* =========================================
                Album artist
 ============================================ */
+
+.bbn {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+
+
+
+
 #portfolio {
     margin-top:  -30px;
 }
 
-/* 
+/*
 #portfolio .vertical-heading {
     margin-bottom: 50px;
 }
@@ -918,14 +930,14 @@ position: fixed;
 
 .portfolio-item {
     margin-bottom: 0px;
-} 
+}
 .albumist-margin {
     margin-left: 10px;
-    
+
 }
 .artistlist-margin {
     margin-left: 10px;
-    
+
 }
 
 
@@ -960,7 +972,7 @@ position: fixed;
 #isotope-filters button.active span {
     color: #f66f6f;
     border-bottom: 4px solid #484d53;
-} 
+}
 
 
 /* Zoom Effect */
@@ -995,9 +1007,9 @@ position: fixed;
     cursor: pointer;
     opacity: 0;
     -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease; 
+    transition: all 0.5s ease;
 }
- 
+
 
 /* Item Details Effect */
 
@@ -1011,7 +1023,7 @@ position: fixed;
 }
 
 .portfolio-item-details h3 {
-    color: #f66f6f; 
+    color: #f66f6f;
     /* text-transform: uppercase; */
     font-size: 20px;
     margin: 10px 10px;
@@ -1042,7 +1054,7 @@ position: fixed;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 } */
- 
+
 
 /* Show Overlay on mouse over */
 
@@ -1067,19 +1079,19 @@ position: fixed;
   /* font-family: Amaranth; */
     font-size: 15px;
     font-weight: 190px;
-   
-    
+
+
     /* text-transform: uppercase; */
-    
+
     -webkit-box-shadow: none;
     box-shadow: none;
-    
+
     outline: 0;
 }
 
 .list_colum{
   padding: 0px 75px;
- 
+
 }
 
 /* =========================================
@@ -1233,7 +1245,7 @@ position: fixed;
 .btn-yellow_aritst {
     color: #fff;
     border: 4px solid #f66f6f;
-    
+
 }
 
 .btn-yellow_aritst:hover,
@@ -1295,21 +1307,21 @@ position: fixed;
   /* for playlist page */
   margin-left: 22px;
   margin-bottom: 25px;
-    
+
 }
 .gridViewContainers h1 {
    color: #f66f6f;
     font-family: Jockey One;
     font-size: 46px;
     font-weight: 10px;
-    
+
 }
 .gridViewContainer h1 {
    color: #f66f6f;
     font-family: Jockey One;
     font-size: 46px;
     font-weight: 10px;
-    
+
 }
 
 /* =========================================
@@ -1345,6 +1357,37 @@ input:focus {
     outline: none;
 }
 
+.tr {
+    font-size: 1.2em;
+    font-family: Oswald;
+    letter-spacing: 1px;
+    color: white;
+}
+.tr:hover{
+  color: #f66f6f;
+}
+
+.srcbtntext{
+  font-size: 1.5em;
+  font-family: Oswald;
+  margin-left:18px;
+  margin-top:18px;
+  margin-bottom:18px;
+  margin-right:18px;
+
+}
+.srcbtn{
+  background-color :#222429;
+  margin-bottom:5px;
+  border-color: #f66f6f;
+}
+.srcbtn:hover{
+  background-color :#f66f6f;
+  margin-bottom:5px;
+}
+
+
+
 /* =========================================
        News Iframe
 ============================================ */
@@ -1360,4 +1403,103 @@ iframe {
     margin-top: 14px;
     margin-right: 25px;
 
+}
+/* =========================================
+       home middle section warnig
+============================================ */
+
+.overlay09,
+.overlay09::before,
+.overlay09::after {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 100%;
+}
+.overlay09 {
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s linear;
+}
+.overlay09::before,
+.overlay09::after {
+  left: 50%;
+  content: '';
+  width: 200%;
+  margin-left: -100%;
+  background: rgba(0, 0, 0, .45);
+  transform: skewX(-30deg) translateX(-100%);
+  transition: transform .3s linear .3s;
+}
+.overlay09.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay09.is-open::before {
+  transform: skewX(-30deg) translateX(0);
+  transition: transform .3s linear;
+}
+.overlay09.is-open::after {
+  transform: skewX(-30deg) translateX(0);
+  transition: transform .3s linear .15s;
+}
+
+
+
+.overlay-trigger {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.overlay-trigger button {
+  display: block;
+  margin: 9em;
+  padding: 2.5em 2.5em;
+  background: #1f1f25;
+  border: 1px solid #1f1f25;
+  border-radius: 25px;
+  color: #f66f6f;
+  font-size: 1.1em;
+  font-family: Oswald;
+  text-align: center;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.overlay-trigger button:hover {
+  /* background: transparent; */
+  background: #f66f6f;
+  color: #1f1f25;
+  font-size: 1.2em;
+  font-family: Oswald;
+}
+.overlay-close {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  padding: 1em 2.5em;
+  background: #1f1f25;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #222;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.overlay-close.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay-close:hover {
+  background: transparent;
+  color: #fff;
 }

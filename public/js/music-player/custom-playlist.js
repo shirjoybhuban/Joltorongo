@@ -32,16 +32,22 @@ $(document).ready(function() {
     );
 });
 
-$(document).on("click", "#clicker li", function() {  // Here both the list of songs in artist and album blades have id clicker
+$(document).on("click", "#clicker img", function() {  // Here both the list of songs in artist and album blades have id clicker
     executed = true;
     path = this.id
+	console.log("Logged Output: path", path)
     num = 0
-    for(count = 0; count < myPlaylist.playlist.length; count++)
-    {
-        if(myPlaylist.playlist[count].mp3 == path)
-        {
-            num = count
-        }
-    }
+    // for(count = 0; count < myPlaylist.playlist.length; count++)
+    // {
+    //     if(myPlaylist.playlist[count].mp3 == path)
+    //     {
+    //         num = count
+    //     }
+    // }
+    myPlaylist.playlist.unshift({
+            mp3: path,
+            oga: path
+    })
+    
     myPlaylist.play(num)
 });

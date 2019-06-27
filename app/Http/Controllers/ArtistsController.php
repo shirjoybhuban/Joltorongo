@@ -20,7 +20,7 @@ class ArtistsController extends Controller
      */
     public function index()
     {
-        $artists =  Artists::orderBy('name','desc')->get();
+        $artists =  Artists::orderBy('name','asc')->get();
         // $artists = DB::select('Select * From artists');
         return view('artist')->with('artists', $artists);
        

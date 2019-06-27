@@ -8,4 +8,5 @@ use Laravel\Scout\Searchable;
 class Songs extends Model
 {
     use Searchable;
+      
 }

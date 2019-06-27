@@ -34,10 +34,10 @@
         <div class="jp-artist">
          <button class="" role="button" tabindex="0">play</button>
          
-         <div class="right">
+<!--          <div class="right">
            <span class="song-name">Ek Chera Ghuri</span>
            <span class="text-center">By Momtaj</span>
-         </div>
+         </div> -->
       </div>
     </div>
     <div class="jp-playlist">

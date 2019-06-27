@@ -19,9 +19,13 @@ Route::get('/music_news', function () {
     return view('music_news');
 });
 
-Route::get('/browse', function () {
-    return view('browse');
+Route::get('/contact', function () {
+    return view('contact');
 });
+
+// Route::get('/browse', function () {
+//     return view('browse');
+// });
 
 Route::get('/playlist', function () {
     return view('playlist');
@@ -30,7 +34,15 @@ Route::get('/single_playlist', function () {
     return view('single_playlist');
 });
 
-Route::get('index','SearchController@search');
+Route::get('/singlesong_video', function () {
+    return view('singlesong_video');
+});
+
+// Route::get('index','SearchController@search');
+
+Route::get('searchsong','SearchSongController@search');
+Route::get('searchalbum','SearchAlbumController@search');
+Route::get('searchartist','SearchArtistController@search');
 
 Route::resource('songs','SongsController');
 Route::resource('genre', 'GenresController');
@@ -40,6 +52,7 @@ Route::resource('album','AlbumsController');
 Route::get('/artist_dynamic', function() {
     return View::make('playlist');
 });
+Route::post('playlistl/{value}',['uses' =>'PlaylistsController@index']);
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

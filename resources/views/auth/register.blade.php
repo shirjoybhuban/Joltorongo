@@ -1,7 +1,15 @@
  @extends('JS and CSS.jscss')
 @section('auth.login')
-    
-    <!-- Preloader Start -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+      <!-- Preloader Start -->
     <div class="row " id="preloader">
       <div id="status" class="col-sm-12">&nbsp;</div>
     </div>
@@ -23,7 +31,7 @@
       @csrf
       <div class="wrap-input100 m-b-26 form-group">
         <span class="label-input100">Name</span>
-        <input placeholder="Enter Name" id="name" type="text" class="input100 form-control{{ $errors->has('name') ? ' is-invalid' : '' }} " name="name" value="{{ old('name') }}" required autofocus>
+        <input placeholder="Enter Name" id="name" type="text" style="color: #ffe6e6;" class="input100 form-control{{ $errors->has('name') ? ' is-invalid' : '' }} " name="name" value="{{ old('name') }}" required autofocus>
         <span class="focus-input100"></span>
         @if ($errors->has('name'))
         <span class="invalid-feedback" role="alert">
@@ -33,7 +41,7 @@
       </div>
       <div class="wrap-input100 validate-input m-b-26 form-group" data-validate="Email is required">
         <span class="label-input100">Email</span>
-        <input placeholder="Enter Email" id="email" type="email" class="input100 form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+        <input placeholder="Enter Email" id="email" type="email" style="color: #ffe6e6;" class="input100 form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
         <span class="focus-input100"></span>
         @if ($errors->has('email'))
         <span class="invalid-feedback" role="alert">
@@ -43,7 +51,7 @@
       </div>
       <div class="wrap-input100 validate-input m-b-18 form-group" data-validate = "Password is required">
         <span class="label-input100">Password</span>
-        <input placeholder="Enter password" id="password" type="password" class=" input100 form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+        <input placeholder="Enter password" id="password" type="password" style="color: #ffe6e6;" class=" input100 form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
         <span class="focus-input100"></span>
         @if ($errors->has('password'))
         <span class="invalid-feedback" role="alert">
@@ -53,7 +61,7 @@
       </div>
       <div class="wrap-input100 validate-input m-b-18 form-group" data-validate = "Password is required">
         <span class="label-input100">Re-type password</span>
-        <input placeholder="password Confirmation" id="password-confirm" type="password" class="form-control input100" name="password_confirmation" required>
+        <input placeholder="password Confirmation" id="password-confirm" type="password" style="color: #ffe6e6;" class="form-control input100" name="password_confirmation" required>
         <span class="focus-input100"></span>
       </div>
       <div class="container-login100-form-btn">
@@ -65,6 +73,10 @@
     
   </div>
 </div>
+</body>
+</html>
+    
+
 
  
 

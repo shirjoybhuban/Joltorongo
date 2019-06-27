@@ -15,7 +15,8 @@ class AlbumsController extends Controller
      */
     public function index()
     {
-        $albums = Album::all();
+        $albums = Album::orderBy('title','asc')->get();
+        
         return view('album')->with('albums', $albums);
     }
 
